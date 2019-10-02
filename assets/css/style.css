@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:700&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Audiowide&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Arvo&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Darker+Grotesque&display=swap');
 body {
     overflow-x: hidden;
     /* Content does not overflow on the browser width */
@@ -155,10 +156,19 @@ body {
 }
 
 .about h3 {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     text-transform: uppercase;
     padding-bottom: 1rem;
     padding-top: 1rem;
+}
+
+.about p {
+    font-size: .8em;
+}
+
+.about img {
+    width: 3.9rem;
+    height: 3.9rem;
 }
 
 .wrench {
@@ -243,6 +253,10 @@ img.example-image {
     border-radius: 0;
 }
 
+.card h5 {
+    color: #597fb0;
+}
+
 hr {
     width: 50%;
 }
@@ -254,23 +268,26 @@ blockquote {
 }
 
 blockquote:before {
-    font-family: Georgia, serif;
     position: absolute;
     font-size: 6em;
-    line-height: 1;
+    line-height: .5;
     top: 0;
     left: 0;
-    content: open-quote;
+    content: "\201D";
+    color: #597fb0;
+    font-family: 'Darker Grotesque', sans-serif;
 }
 blockquote:after {
-    font-family: Georgia, serif;
     position: absolute;
     float:right;
     font-size:6em;
     line-height: 1;
     right:0;
     bottom:-0.5em;
-    content: close-quote;
+    content: "\201C";
+    color: #597fb0;
+    font-family: 'Darker Grotesque', sans-serif;
+    
 }
 blockquote footer {
     padding: 0 2em 0 0;
@@ -278,6 +295,7 @@ blockquote footer {
 }
 blockquote cite:before {
     content: "\2013";
+    color: #597fb0;
 }
 
 /*
