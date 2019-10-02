@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Audiowide&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Arvo&display=swap');
+body {
+    overflow-x: hidden;
+    /* Content does not overflow on the browser width */
+    font-family: 'Lato', sans-serif;
+    color: #505962;
+}
+
+/*--- Nav Scrolling offset ---*/
+
+.offset:before {
+    height: 62px;
+    margin-top: -62px;
+    /*--(removes white space)--*/
+    content: "";
+    display: block;
+}
+
+/*--Extra bootstrap column padding--*/
+
+/*--1 Rem=16px--*/
+
+[class*="col-"] {
+    padding: 1rem;
+}
+
+/*=====NAVIGATION=====*/
+
+.navbar {
+    background-color: rgba(89, 127, 176, .8);
+    padding: .7rem 1rem;
+    text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: .1rem;
+}
+
+.navbar-logo img {
+    height: 3.5rem;
+    margin-left: -.5rem;
+}
+
+.navbar .nav-link {
+    color: #fff;
+    padding-top: .7rem;
+}
+
+.navbar-nav .nav-link.active, .navbar-nav .nav-link:hover {
+    color: #dadfda;
+}
+
+.navbar-toggler-icon {
+    color: #fff;
+    font-size: 1.6rem;
+}
+
+/*=====LANDING PAGE=====*/
+
+.home-inner {
+    background-image: url('../images/pipes.jpg');
+    z-index: 2;
+}
+
+.caption {
+    width: 100%;
+    max-width: 100%;
+    position: absolute;
+    top: 25%;
+    font-family: 'Audiowide', cursive;
+    color: #fff;
+    text-transform: uppercase;
+    z-index: 1;
+    display: inline-block;
+    background-color: rgba(102, 102, 102, 0.6);
+}
+
+.caption img {
+    width: 15%;
+    padding: 2rem 0rem 2rem 0rem;
+}
+
+.caption h2 {
+    letter-spacing: 1rem;
+}
+
+.caption a {
+    margin-bottom: 2rem;
+}
+
+.title {
+    display: block;
+}
+
+.heading-underline {
+    width: 3.5em;
+    height: 7px;
+    background-color: #597fb0;
+    margin: 0 auto 2rem;
+}
+
+.btn-lg {
+    border-width: .2em !important;
+}
+
+.btn-lg:hover {
+    color: #597fb0;
+}
+
+/*=======ABOUT SECTION=====*/
+
+.jumbotron {
+    margin-bottom: 0;
+    border-radius: 0;
+    padding: 3rem 0 3rem;
+    /*REMOVES WHITE SPACE*/
+}
+
+.narrow {
+    width: 85%;
+    margin: 0 auto;
+    padding-top: 1rem;
+}
+
+.narrow p {
+    font-size: 1rem;
+    text-align: center;
+    font-family: 'Arvo', serif;
+    word-spacing: 2px;
+}
+
+.jumbotron h3 {
+    font-size: 1.9rem;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    color: #505962;
+}
+
+.heading {
+    font-size: 1.9rem;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    color: #505962;
+}
+
+.heading-underline2 {
+    width: 5.5em;
+    height: 7px;
+    background-color: #597fb0;
+    margin: 0 auto 2rem;
+}
+
+.about h3 {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+}
+
+.wrench {
+    color: #c0c0c0;
+}
+
+.bath {
+    color: rgb(212, 175, 55);
+}
+
+.fan {
+    color: #8c9493;
+}
+
+.flame {
+    color: #e25822;
+}
+
+/*=======GALLERY SECTION======*/
+
+.padding {
+    padding: 2rem 0;
+}
+
+.no-padding [class*=col-] {
+    padding: 0;
+}
+
+.contact {
+    background-color: rgba(102, 102, 102, 0.8);
+    padding: 3rem 0 3rem 0;
+}
+
+.contact h3 {
+    color: #fff;
+}
+
+.contact-text {
+    color: #fff;
+}
+
+img.example-image {
+    max-width: 100%;
+}
+
+.portfolio-item img:hover {
+    transform: scale(1.1);
+    cursor: zoom-in;
+}
+
+.portfolio-item img {
+    transition: transform .4s ease;
+}
+
+.portfolio-item {
+    overflow: hidden;
+    z-index: 98;
+    position: relative;
+    text-align: center;
+}
+
+.over-lay p {
+    position: absolute;
+    z-index: 99;
+    top: 83%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+    font-size: 1.5em;
+    color: #fff;
+}
+
+/*=======TESTOMONIAL SECTION======*/
+.card {
+    margin: 0 1rem;
+    border-radius: 0;
+    font-size: .8em;
+
+}
+
+.card-img-top {
+    border-radius: 0;
+}
+
+hr {
+    width: 50%;
+}
+
+blockquote {
+    position: relative;
+    margin: 0.5em;
+    padding: 0.5em 2em 0.5em 3em;
+}
+
+blockquote:before {
+    font-family: Georgia, serif;
+    position: absolute;
+    font-size: 6em;
+    line-height: 1;
+    top: 0;
+    left: 0;
+    content: open-quote;
+}
+blockquote:after {
+    font-family: Georgia, serif;
+    position: absolute;
+    float:right;
+    font-size:6em;
+    line-height: 1;
+    right:0;
+    bottom:-0.5em;
+    content: close-quote;
+}
+blockquote footer {
+    padding: 0 2em 0 0;
+    text-align:right;
+}
+blockquote cite:before {
+    content: "\2013";
+}
+
+/*
+Extra-small (xs) devices (portrait phones, less than 576px)
+- Requires no media queries since this is Boostrap default
+
+Small (sm) devices (landscape phones, 576px and above)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and above)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and above)
+@media (min-width: 992px) { ... }
+
+Extra-large (xl) devices (large desktops, 1200px and above)
+@media (min-width: 1200px) { ... }
+*/
