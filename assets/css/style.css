@@ -9,6 +9,41 @@ body {
     color: #505962;
 }
 
+   /*--- Fixed Landing Page Section --*/
+   .landing {
+     position: relative;
+     width: 100%;
+     height: 100vh;
+     display: table;
+     background: #E9ECEF;
+     z-index: -1;
+   }
+   .home-wrap {
+     clip: rect(0, auto, auto, 0);
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+   }
+   .home-inner {
+     position: fixed;
+     display: table;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     background-size: cover;
+     background-position: center center;
+     -webkit-transform: translateZ(0);
+             transform: translateZ(0);
+     will-change: transform;
+   }
+   /*--- iOS Portfolio Row Fix --*/
+   #portfolio .row {
+       margin: 0!important;
+   }
+
 /*--- Nav Scrolling offset ---*/
 
 .offset:before {
@@ -102,6 +137,7 @@ body {
 
 .btn-lg {
     border-width: .2em !important;
+    font-family: 'Lato', sans-serif;
 }
 
 .btn-lg:hover {
@@ -187,6 +223,32 @@ body {
     color: #e25822;
 }
 
+.gallery-link {
+    padding: 2rem 0 1rem 0;
+    font-family: 'Lato', sans-serif;
+    text-transform: uppercase;
+}
+
+.gallery-link h3 {
+    color: #505962;
+}
+
+.gallery-link p {
+    color: #505962;
+    font-family: 'Lato', sans-serif;
+}
+
+.gallery-link .btn {
+    background-color: #597fb0;
+    color: #fff;
+    border: none;
+}
+
+.gallery-link .btn:hover {
+    background-color: #fff;
+    color: #597fb0;
+}
+
 /*=======GALLERY SECTION======*/
 
 .padding {
@@ -210,13 +272,20 @@ body {
     color: #fff;
 }
 
+.btn-md {
+    text-transform: uppercase;
+}
+
+.btn-md:hover {
+    color: #597fb0;
+}
+
 img.example-image {
     max-width: 100%;
 }
 
 .portfolio-item img:hover {
     transform: scale(1.1);
-    cursor: zoom-in;
 }
 
 .portfolio-item img {
@@ -242,11 +311,11 @@ img.example-image {
 }
 
 /*=======TESTOMONIAL SECTION======*/
+
 .card {
     margin: 0 1rem;
     border-radius: 0;
     font-size: .8em;
-
 }
 
 .card-img-top {
@@ -277,25 +346,80 @@ blockquote:before {
     color: #597fb0;
     font-family: 'Darker Grotesque', sans-serif;
 }
+
 blockquote:after {
     position: absolute;
-    float:right;
-    font-size:6em;
+    float: right;
+    font-size: 6em;
     line-height: 1;
-    right:0;
-    bottom:-0.5em;
+    right: 0;
+    bottom: -0.5em;
     content: "\201C";
     color: #597fb0;
     font-family: 'Darker Grotesque', sans-serif;
-    
 }
+
 blockquote footer {
     padding: 0 2em 0 0;
-    text-align:right;
+    text-align: right;
 }
+
 blockquote cite:before {
     content: "\2013";
     color: #597fb0;
+}
+
+/*=======CONTACT SECTION======*/
+
+.footer {
+    background: rgba(102, 102, 102, 0.98);
+}
+
+.footer .row {
+    padding: 1rem 2rem 2rem;
+    margin: 0 1.5rem;
+    color: #fff;
+}
+
+.footer img {
+    height: 6rem;
+    margin: 1.5rem 0;
+}
+
+input .btn {
+    cursor: pointer;
+}
+
+/*======GALLERY PAGE========*/
+.gallery-jumbotron {
+    padding-bottom: -5rem;
+    border-radius: 0;
+}
+
+.gallery {
+    margin: 10px 50px;
+
+}
+
+.gallery img {
+    transition: 1s;
+    padding: 15px;
+    width: 200px;
+}
+
+.gallery img:hover {
+    filter: grayscale(100%);
+    transform: scale(1.1);
+}
+
+.col-md-7 h3 {
+    padding-top: 1rem;
+}
+
+.copy-right {
+    width: 100%;
+    color: #fff;
+    border: solid 1px;
 }
 
 /*
