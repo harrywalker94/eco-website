@@ -13,23 +13,22 @@
     <title>Eco Solutions</title>
 </head>
 
-<body data-spy="scroll" data-target="navbarResponsive">
+<body data-spy="scroll" data-target="#navbarResponsive">
 
     <!--Start Home Section-->
-    <div class="home" class="offset">
-        <!--offset class is used so fixed nav on top doesn't lay over section we are scrolling to-->
+    <div id="home">
 
         <!--Navigation-->
-        <nav class="navbar navbar-expand-md fixed-top">
+        <nav class="navbar navbar-expand-md fixed-top" id="navHome">
             <div class="container-fluid">
                 <a class="navbar-logo" href="index.html"><img src="assets/images/logo11.png" alt="Eco-Solutions"></a>
-                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarHome">
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarResponsive">
                     <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarHome">
+                <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="index.html">Home</a>
+                            <a class="nav-link active" href="#home">Home</a> 
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#about">About</a>
@@ -37,7 +36,6 @@
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Gallery</a>
                             <div class="dropdown-menu">
-                                <a href="gallery.html#plumbing" class="dropdown-item">Plumbing</a>
                                 <a href="gallery.html#bathrooms" class="dropdown-item">Bathrooms</a>
                                 <a href="gallery.html#kitchens" class="dropdown-item">Kitchens</a>
                                 <a href="gallery.html#radiators" class="dropdown-item">Radiators</a>
@@ -82,7 +80,7 @@
     <!--End Home Section-->
 
     <!--Start About Section-->
-    <div id="about" class="offset">
+    <div id="about" class="offset"><!--offset class is used so fixed nav on top doesn't lay over section we are scrolling to-->
         <!--Start Jumbotron-->
         <div class="jumbotron">
             <h3>About Us</h3>
@@ -399,7 +397,7 @@
             <div class="container-fluid footer">
                 <div class="row">
                     <div class="col-md-5">
-                        <img src="assets/images/logo11.png" alt="Eco Solutions Logo">
+                        <img src="assets/images/logo12.png" alt="Eco Solutions Logo">
                         <span>
                             <p>Call us now for a free quote!</p>
                             <strong>Our Location</strong>
@@ -438,18 +436,9 @@
                     </div>
                 </div>
 
-                
+
             </div>
         </div>
-
-
-
-
-
-
-
-
-
     </div>
     <!--End Contact Section-->
 

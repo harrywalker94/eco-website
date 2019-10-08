@@ -14,53 +14,51 @@
     <title>Eco Solutions</title>
 </head>
 
-<body data-spy="scroll" data-target="navbarResponsive">
+<body data-spy="scroll" data-target="#navbarResponsive">
 
-    <!--Start Home Section-->
-    <div class="home" class="offset">
-        <!--offset class is used so fixed nav on top doesn't lay over section we are scrolling to-->
-
-        <!--Navigation-->
-        <nav class="navbar navbar-expand-md fixed-top">
-            <div class="container-fluid">
-                <a class="navbar-logo" href="index.html"><img src="assets/images/logo11.png" alt="Eco-Solutions"></a>
-                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarHome">
-                    <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarHome">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#about">About</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Gallery</a>
-                            <div class="dropdown-menu">
-                                <a href="gallery.html#plumbing" class="dropdown-item">Plumbing</a>
-                                <a href="gallery.html#bathrooms" class="dropdown-item">Bathrooms</a>
-                                <a href="gallery.html#kitchens" class="dropdown-item">Kitchens</a>
-                                <a href="gallery.html#radiators" class="dropdown-item">Radiators</a>
-                                <a href="gallery.html#boilers" class="dropdown-item">Boilers</a>
-                                <a href="gallery.html#air-source" class="dropdown-item">Air-Source Heat Pumps</a>
-                            </div>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#testomonials">Testomonials</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#contact">Contact</a>
-                        </li>
-                    </ul>
+        <!--Start Home Section-->
+        <div id="home">
+    
+            <!--Navigation-->
+            <nav class="navbar navbar-expand-md fixed-top" id="navHome">
+                <div class="container-fluid">
+                    <a class="navbar-logo" href="index.html"><img src="assets/images/logo11.png" alt="Eco-Solutions"></a>
+                    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarResponsive">
+                        <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarResponsive">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Home</a> 
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#about">About</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link active dropdown-toggle" data-toggle="dropdown" href="#">Gallery</a>
+                                <div class="dropdown-menu">
+                                    <a href="gallery.html#bathrooms" class="dropdown-item">Bathrooms</a>
+                                    <a href="gallery.html#kitchens" class="dropdown-item">Kitchens</a>
+                                    <a href="gallery.html#radiators" class="dropdown-item">Radiators</a>
+                                    <a href="gallery.html#boilers" class="dropdown-item">Boilers</a>
+                                    <a href="gallery.html#air-source" class="dropdown-item">Air-Source Heat Pumps</a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#testomonials">Testomonials</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#contact">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-        </nav>
-
-        <!--End Navigation-->
+            </nav>
+    
+            <!--End Navigation-->
 
         <!--Start Landing Page-->
-        <div class="landing">
+        <div class="landing2">
             <div class="home-outer">
                 <div class="home-inner">
 
@@ -68,38 +66,118 @@
             </div>
         </div>
         <!--Start Caption-->
-        <div class="caption center-block text-center">
+        <div class="caption caption2 center-block text-center">
             <img src="assets/images/logo12.png">
-            <h2 class="title">ECO Solutions</h2>
+            <h2 class="title">Gallery</h2>
             <br>
             <div class="heading-underline"></div>
-            <a class="btn btn-outline-light btn-lg" href="#gallery">Gallery.</a>
+            <a class="btn btn-outline-light btn-lg" href="#bathrooms">View Below</a>
         </div>
         <!--End Caption-->
 
         <!--End Landing Page-->
 
-        <div class="jumbotron gallery-jumbotron" id="gallery">
-            <div class="container-fluid padding">
-                <h3 class="heading">Gallery</h3>
-                <div class="heading-underline2"></div>
+
+
+
+        <!--Start Bathroom Gallery-->
+        <div class="offset" id="bathrooms">
+            <h3 class="heading gallery-heading">Bathrooms</h3>
+            <div class="heading-underline2"></div>
+
+            <div class="row gallery">
+                <div class="col-md-12">
+                    <a href="assets/images/bathroom1.jpg" data-lightbox="mygallery" data-title="2019"><img
+                            src="assets/images/bathroom1.jpg" alt="Bathroom"></a>
+                </div>
+                <a href="assets/images/bathroom2.jpg" data-lightbox="mygallery" data-title="2019"></a>
+
+                <a href="assets/images/bathroom3.jpg" data-lightbox="mygallery" data-title="2019"></a>
+
+                <a href="assets/images/bathroom5.jpg" data-lightbox="mygallery" data-title="2018"></a>
+
+                <a href="assets/images/bathroom6.jpg" data-lightbox="mygallery" data-title="2019"></a>
+
+                <a href="assets/images/bathroom9.jpg" data-lightbox="mygallery" data-title="2019"></a>
             </div>
         </div>
-        <div class="gallery">
-            <a href="assets/images/airsource4.jpg" data-lightbox="mygallery" data-title="Air-Source Heat Pump, Hertford"><img src="assets/images/airsource4.jpg"
-                    alt="Air-Source Heat Pump"></a>
-            <a href="assets/images/airsource5.jpg" data-lightbox="mygallery"><img src="assets/images/airsource4.jpg"
-                    alt="Air-Source Heat Pump"></a>
-            <a href="assets/images/airsource6.jpg" data-lightbox="mygallery"><img src="assets/images/airsource4.jpg"
-                    alt="Air-Source Heat Pump"></a>
-            <a href="assets/images/airsource7.jpg" data-lightbox="mygallery"><img src="assets/images/airsource4.jpg"
-                    alt="Air-Source Heat Pump"></a>
-            <a href="assets/images/airsource4.jpg" data-lightbox="mygallery"><img src="assets/images/airsource4.jpg"
-                    alt="Air-Source Heat Pump"></a>
-            <a href="assets/images/airsource4.jpg" data-lightbox="mygallery"><img src="assets/images/airsource4.jpg"
-                    alt="Air-Source Heat Pump"></a>
+        <!--End Bathroom Gallery-->
 
+        <!--Start Bathroom Gallery-->
+        <div class="offset">
+            <h3 class="heading" id="bathrooms">Kitchens</h3>
+            <div class="heading-underline2"></div>
+
+            <div class="row gallery">
+                <div class="col-md-12">
+                    <a href="assets/images/kitchen.jpg" data-lightbox="mygallery2" data-title="2019"><img
+                            src="assets/images/kitchen.jpg" alt="Kitchen"></a>
+                </div>
+                <a href="assets/images/kitchen2.jpg" data-lightbox="mygallery2" data-title="2018"></a>
+
+                <a href="assets/images/kitchen7.jpg" data-lightbox="mygallery2" data-title="2018"></a>
+
+                <a href="assets/images/kitchen5.jpg" data-lightbox="mygallery2" data-title="2019"></a>
+
+                <a href="assets/images/kitchen4.jpg" data-lightbox="mygallery2" data-title="2019"></a>
+            </div>
+            <!--End Bathroom Gallery-->
+
+
+
+            <!--End Bathroom Gallery-->
+
+            <!--Start Contact Section-->
+            <div id="contact" class="offset">
+                <div class="container-fluid footer">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <img src="assets/images/logo12.png" alt="Eco Solutions Logo">
+                            <span>
+                                <p>Call us now for a free quote!</p>
+                                <strong>Our Location</strong>
+                                <p>15 Street Name<br>Our City, UK</p>
+                                <strong>Contact Info</strong>
+                                <p>08000 080034<br>email@email.com</p>
+                            </span>
+                            <br>
+                            <br>
+                            <hr class="copy-right">&copy; ECO Solutions
+
+                        </div>
+
+                        <div class="col-md-7">
+                            <h3>Contact Us</h3>
+                            <form id="contact form" method="POST" action="contact.php">
+                                <div class="messages"></div>
+                                <div class="controls">
+                                    <div class="form-group">
+                                        <input id="form_name" type="text" name="name" class="form-control"
+                                            placeholder="Enter your name." required="required">
+                                    </div>
+                                    <div class="form-group">
+                                        <input id="form_email" type="text" name="email" class="form-control"
+                                            placeholder="Enter your email." required="required">
+                                    </div>
+                                    <div class="form-group">
+                                        <textarea id="form_message" type="text" name="message" class="form-control h-25"
+                                            placeholder="Add your message." rows="5" required="required"></textarea>
+                                    </div>
+                                    <input type="submit" class="btn btn-outline-light btn-md" value="Send Message">
+
+                                </div>
+                            </form>
+
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
         </div>
+        <!--End Contact Section-->
+
+
 </body>
 
 
