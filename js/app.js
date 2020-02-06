@@ -6,20 +6,15 @@ $(document).ready(function () {
 
   /* Navbar Fade In */
   // Hide Navbar initially
-  $(".navScroll").hide();
   $(function () {
     $(window).scroll(function () {
       // Set distance user needs to scroll before fadeIn
-      if ($(this).scrollTop() >= 152) {
-        $(".navScroll").fadeIn();
-        $(".navScroll").addClass("fixed-top");
-        $(".navNormal").fadeOut();
-        $(".icon-top").fadeOut();
+      if ($(this).scrollTop() >= 149) {
+        $(".navbar").addClass("navbar-background");
+        $(".navbar").addClass("fixed-top");
       } else {
-        $(".navScroll").fadeOut();
-        $(".navScroll").removeClass("fixed-top");
-        $(".navNormal").fadeIn();
-        $(".icon-top").fadeIn();
+        $(".navbar").removeClass("navbar-background");
+        $(".navbar").removeClass("fixed-top");
       }
     });
   });
@@ -33,9 +28,9 @@ $(document).ready(function () {
       .stop() // To stop the animate when another anchor linked is clicked
       .animate(
         {
-          scrollTop: $(target).offset().top // scrollTop property gets or sets the number of pixels that an element's content is scrolled vertically.
+          scrollTop: $(target).offset().top - 90// scrollTop property gets or sets the number of pixels that an element's content is scrolled vertically.
         }, // The .offset().top  method allows us to retrieve the current position of the target element
-        2000
+        1500
       );
   });
 });
