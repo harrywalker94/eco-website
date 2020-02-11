@@ -1,6 +1,6 @@
 body {
     background: #fff;
-    font-family: 'Archivo', sans-serif;
+    font-family: 'Karla', sans-serif;
 }
 
 /*############### Icon Header  ###############*/
@@ -9,14 +9,35 @@ body {
     background: #53c07d;
 }
 
-.icon-top a {
+.icon-top a:nth-child(1) {
     color: #f1fffa;
     font-size: 1.6rem;
     transition: ease .5s;
 }
 
+.icon-top a:nth-child(2) {
+    color: #f1fffa;
+    font-size: 1.6rem;
+    transition: ease .5s;
+}
+
+.icon-top a:nth-child(3) {
+    color: #f1fffa;
+    font-size: 1.6rem;
+    transition: ease .5s;
+    border-right: solid 2px #214c32;
+}
+
 .icon-top a:nth-child(4) {
-    border-left: solid 2px #214c32;
+    color: #f1fffa;
+    font-size: 1.2rem;
+    transition: ease .5s;
+}
+
+.icon-top a:nth-child(5) {
+    color: #f1fffa;
+    font-size: 1.2rem;
+    transition: ease .5s;
 }
 
 .icon-top a:hover {
@@ -24,8 +45,14 @@ body {
     text-decoration: none;
 }
 
+.icon-hover {
+    color: #214c32;
+    transition: ease .5s;
+}
+
 .contact-us {
     font-size: 1rem;
+    color: #f1fffa;
     text-transform: uppercase;
     letter-spacing: 2px;
     font-weight: 300;
@@ -122,8 +149,7 @@ nav {
 
 .slider-btn {
     color: #fff;
-    background: rgba(0, 0, 0, 0.2);
-    border: solid 1px #fff;
+    background: rgba(0, 0, 0, 0.4);
     transition: all 1s ease;
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
     border-radius: 3px;
@@ -184,6 +210,25 @@ nav {
     color: #214c32;
 }
 
+.about-us-btn {
+    color: #fff;
+    background: rgba(0, 0, 0, 0.2);
+    transition: all 1s ease;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.7);
+    border-radius: 3px;
+    letter-spacing: 2px;
+    font-weight: 100;
+}
+
+.about-us-btn:hover {
+    color: #fff;
+    background: rgba(83, 192, 125, 0.8);
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.9);
+}
+
+/*############### Services ###############*/
+
 .filler {
     background: #214c32;
     color: #fff;
@@ -195,47 +240,44 @@ nav {
     background: rgba(83, 192, 125, 0.3);
 }
 
-/*############### Case Studies ###############*/
-
-.cs-grid {
-    opacity: 0.4;
+.services-grid {
+    opacity: 0.5;
 }
 
-.cs-grid-div {
+.services-grid-div {
     transition: ease-in-out 0.5s;
-    background: linear-gradient(to bottom, rgba(83, 192, 125, 0.7), rgba(83, 192, 125, 0.7)), center/cover fixed no-repeat;
+    background: linear-gradient(to bottom, rgba(33, 76, 50, 0.4), rgba(33, 76, 50, 0.4)), center/cover fixed no-repeat;
     padding: 0;
     margin: 0;
 }
 
-.cs-grid-div h6 {
+.services-grid-div h6 {
     transition: ease-in-out 0.5s;
     text-transform: capitalize;
     font-weight: 100;
-    letter-spacing: 1px;
     text-align: center;
-    background-color: #214c32;
-    border-bottom: solid 4px #53c07d;
+    background-color: #53c07d;
 }
 
-.cs-grid-div h3 {
+.services-grid-div h3 {
     transition: ease-in-out 0.5;
     text-transform: capitalize;
     font-weight: 220;
     text-align: left !important;
-    border-bottom: solid 4px #53c07d;
+    border-top: solid 2px #f1fffa;
+    border-right: solid 2px #f1fffa;
     margin-bottom: 10px;
 }
 
-.cs-grid-div:hover {
-    background-color: #214c32;
+.services-grid-div:hover {
+    background-color: #53c07d;
 }
 
-.cs-grid-div:hover h6 {
-    color: #fff;
+.services-grid-div:hover h6 {
     background-color: #53c07d;
-    border-bottom: solid 4px #53c07d;
     transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.9);
+    cursor: pointer;
 }
 
 .container-fluid {
@@ -249,22 +291,30 @@ nav {
     transform: translate(-50%, -50%);
     color: white;
     transition: ease-in-out 0.8s;
-    width: 65%;
+    width: 75%;
 }
 
-/*
-.parallax {
-    // The image used //
-    background-image: url("../images/wind-farm.jpg");
-    // Set a specific height //
-    min-height: 500px;
-    // Create the parallax scrolling effect //
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+/*############### about-us.html ###############*/
+
+.locations h1, .locations h4 {
+    letter-spacing: 1px;
+    font-weight: 100;
+    color: #214c32;
 }
-*/
+
+.parallax1 {
+    /* Set a specific height */
+    min-height: 150px;
+    /* Create the parallax scrolling effect with linear gradient */
+    background: linear-gradient(to bottom, rgba(83, 192, 125, 0), rgba(83, 192, 125, 0.3)), url('../images/solar5.jpg') center/cover fixed no-repeat;
+}
+
+.parallax2 {
+    /* Set a specific height */
+    min-height: 200px;
+    /* Create the parallax scrolling effect with linear gradient */
+    background: linear-gradient(to bottom, rgba(83, 192, 125, 0), rgba(83, 192, 125, 0.9)), url('../images/solar5.jpg') center/cover fixed no-repeat;
+}
 
 /*############### Google Maps API ###############*/
 
@@ -272,15 +322,34 @@ div#map {
     min-height: 360px;
 }
 
-@media screen and (max-width: 430px) {
-    .carousel-caption h1 {
-        font-size: 2rem;
+@media (max-width: 400px) {
+    .contact-us {
+        display: none;
     }
-    .cs-grid-div {
-        width: 100%;
-        height: 200px;
+    .details {
+        display: none;
     }
-    ;
+    .icon-hover {
+        font-size: 1.4rem;
+        color: #f1fffa;
+    }
+    .icon-top a:nth-child(4) {
+        padding-right: 10px;
+    }
+    .icon-top a:nth-child(3) {
+        border: none;
+    }
+    .navbar {
+        text-align: center;
+    }
+    .navbar-toggler {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .top-icons {
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 /*

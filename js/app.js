@@ -1,7 +1,20 @@
-/* Burger icon to 'x' */
 $(document).ready(function () {
+  /* Burger icon to 'x' */
   $(".navbar").click(function () {
     $(".navbar-toggler").toggleClass("change");
+  });
+
+  /* Icon hover color change */
+  $(".icon-top a:nth-child(4)").hover(function () {
+    $(".fa-phone-alt").css("color", "#f1fffa");
+  }, function () {
+    $(".fa-phone-alt").css("color", "#214c32");
+  });
+
+  $(".icon-top a:nth-child(5)").hover(function () {
+    $(".fa-envelope").css("color", "#f1fffa");
+  }, function () {
+    $(".fa-envelope").css("color", "#214c32");
   });
 
   /* Navbar Fade In */
@@ -35,6 +48,9 @@ $(document).ready(function () {
   });
 });
 
+
+
+
 function initMap() {
   var map = new google.maps.Map(document.getElementById("map"), {
     zoom: 3,
@@ -64,3 +80,4 @@ function initMap() {
       "https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m"
   });
 }
+
