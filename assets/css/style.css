@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     background: #fff;
     font-family: 'Karla', sans-serif;
@@ -50,12 +56,22 @@ body {
     transition: ease .5s;
 }
 
-.contact-us {
+.icon-hover2 {
+    color: #f1fffa;
+    transition: ease .5s;
+}
+
+.icon-hover3 {
+    display: none;
+}
+
+.contact-us1, .contact-us2 {
     font-size: 1rem;
     color: #f1fffa;
     text-transform: uppercase;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     font-weight: 300;
+    transition: ease .5s;
 }
 
 /*############### Navbar ###############*/
@@ -125,7 +141,7 @@ nav {
 /*############### Home-page Image Slider ###############*/
 
 .item-1, .item-2, .item-3 {
-    min-height: 60vh;
+    min-height: 70vh;
 }
 
 .item-1 {
@@ -139,7 +155,7 @@ nav {
 }
 
 .item-3 {
-    background: linear-gradient(to left, rgba(83, 192, 125, 0.7), rgba(83, 192, 125, 0.1)), url('../images/wind-farm.jpg')center/cover fixed no-repeat;
+    background: linear-gradient(to left, rgba(83, 192, 125, 0.7), rgba(83, 192, 125, 0.1)), url('../images/solar4.jpg')center/cover fixed no-repeat;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
 }
 
@@ -230,14 +246,14 @@ nav {
 /*############### Services ###############*/
 
 .filler {
-    background: #214c32;
+    background: #53c07d;
     color: #fff;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     font-weight: 100;
 }
 
 .filler span {
-    background: rgba(83, 192, 125, 0.3);
+    background: rgba(33, 76, 50, 0.2);
 }
 
 .services-grid {
@@ -246,7 +262,7 @@ nav {
 
 .services-grid-div {
     transition: ease-in-out 0.5s;
-    background: linear-gradient(to bottom, rgba(33, 76, 50, 0.4), rgba(33, 76, 50, 0.4)), center/cover fixed no-repeat;
+    background: linear-gradient(to bottom, rgba(33, 76, 50, 0.8), rgba(33, 76, 50, 0.8)), center/cover fixed no-repeat;
     padding: 0;
     margin: 0;
 }
@@ -269,12 +285,44 @@ nav {
     margin-bottom: 10px;
 }
 
-.services-grid-div:hover {
+.services-grid-div:hover h6 {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.9);
+    cursor: pointer;
+}
+
+.services-grid-div2 {
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    transition: ease-in-out 1s;
+    background-size: 100%;
+}
+
+.services-grid-div2 h6 {
+    transition: ease-in-out 0.5s;
+    text-transform: capitalize;
+    font-weight: 100;
+    text-align: center;
     background-color: #53c07d;
 }
 
-.services-grid-div:hover h6 {
-    background-color: #53c07d;
+.services-grid-div2 h3 {
+    transition: ease-in-out 0.5;
+    text-transform: capitalize;
+    font-weight: 220;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.services-grid-div2 p {
+    transition: ease-in-out 0.5;
+    text-transform: capitalize;
+    font-weight: 220;
+    text-align: left;
+}
+
+.services-grid-div2 h6:hover {
     transform: translateY(-3px);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.9);
     cursor: pointer;
@@ -316,22 +364,47 @@ nav {
     background: linear-gradient(to bottom, rgba(83, 192, 125, 0), rgba(83, 192, 125, 0.9)), url('../images/solar5.jpg') center/cover fixed no-repeat;
 }
 
+/*############### Footer ###############*/
+
+.footer {
+    background-color: #53c07d;
+    border-top: solid 3px rgba(33, 76, 50, .2);
+}
+
+.footer-logo {
+    width: 100px;
+    height: 70px;
+}
+
 /*############### Google Maps API ###############*/
 
 div#map {
     min-height: 360px;
 }
 
-@media (max-width: 400px) {
-    .contact-us {
+@media (max-width: 450px) {
+    .contact-us1, .contact-us2 {
         display: none;
     }
     .details {
         display: none;
     }
     .icon-hover {
-        font-size: 1.4rem;
+        color: #214c32;
+        transition: ease .5s;
+        display: none;
+    }
+    .icon-hover2 {
+        display: none;
+    }
+    .icon-hover3 {
         color: #f1fffa;
+        transition: ease .5s;
+        font-size: 1.4rem;
+        display: unset;
+    }
+    .icon-hover3:hover {
+        color: #214c32;
     }
     .icon-top a:nth-child(4) {
         padding-right: 10px;

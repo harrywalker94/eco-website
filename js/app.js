@@ -6,16 +6,40 @@ $(document).ready(function () {
 
   /* Icon hover color change */
   $(".icon-top a:nth-child(4)").hover(function () {
-    $(".fa-phone-alt").css("color", "#f1fffa");
+    $(".icon-hover").css("color", "#f1fffa");
+    $(".contact-us1").css("color", "#214c32");
   }, function () {
-    $(".fa-phone-alt").css("color", "#214c32");
+    $(".icon-hover").css("color", "#214c32");
+    $(".contact-us1").css("color", "#f1fffa");
   });
 
   $(".icon-top a:nth-child(5)").hover(function () {
-    $(".fa-envelope").css("color", "#f1fffa");
+    $(".icon-hover2").css("color", "#f1fffa");
+    $(".contact-us2").css("color", "#214c32");
   }, function () {
-    $(".fa-envelope").css("color", "#214c32");
+    $(".icon-hover2").css("color", "#214c32");
+    $(".contact-us2").css("color", "#f1fffa");
+
   });
+
+
+
+  $(".icon-top a:nth-child(4)").hover(function () {
+    $(".icon-hover").css("color", "#f1fffa");
+  }, function () {
+    $(".icon-hover").css("color", "#214c32");
+  });
+
+  $(".icon-top a:nth-child(5)").hover(function () {
+    $(".icon-hover2").css("color", "#f1fffa");
+  }, function () {
+    $(".icon-hover2").css("color", "#214c32");
+  });
+
+
+
+
+
 
   /* Navbar Fade In */
   // Hide Navbar initially
@@ -43,9 +67,12 @@ $(document).ready(function () {
         {
           scrollTop: $(target).offset().top - 90// scrollTop property gets or sets the number of pixels that an element's content is scrolled vertically.
         }, // The .offset().top  method allows us to retrieve the current position of the target element
-        1500
+        2000
       );
   });
+
+
+
 });
 
 
