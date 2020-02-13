@@ -145,17 +145,32 @@ nav {
 }
 
 .item-1 {
-    background: linear-gradient(to right, rgba(83, 192, 125, 0.7), rgba(83, 192, 125, 0.1)), url('../images/solar-panel.jpg')center/cover fixed no-repeat;
+    background: linear-gradient(to right, rgba(83, 192, 125, 0.7), rgba(83, 192, 125, 0.1)), url('../images/solar-panel.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 100%;
     clip-path: polygon(0 0, 100% 0, 100% 75%, 0 95%);
 }
 
 .item-2 {
-    background: linear-gradient(to bottom, rgba(83, 192, 125, 0.7), rgba(83, 192, 125, 0.1)), url('../images/wind-farm2.jpg')center/cover fixed no-repeat;
+    background: linear-gradient(to bottom, rgba(83, 192, 125, 0.7), rgba(83, 192, 125, 0.1)), url('../images/wind-farm2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 100%;
     clip-path: polygon(0 18%, 100% 7%, 100% 77%, 0 94%);
 }
 
 .item-3 {
-    background: linear-gradient(to left, rgba(83, 192, 125, 0.7), rgba(83, 192, 125, 0.1)), url('../images/solar4.jpg')center/cover fixed no-repeat;
+    background: linear-gradient(to left, rgba(83, 192, 125, 0.7), rgba(83, 192, 125, 0.1)), url('../images/solar4.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 100%;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
 }
 
@@ -419,9 +434,6 @@ div#map {
     .top-icons {
         margin-left: auto;
         margin-right: auto;
-    }
-    .carousel-slide {
-        display: none !important;
     }
 }
 
