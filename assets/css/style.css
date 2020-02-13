@@ -146,23 +146,29 @@ nav {
 
 .item-1 {
     background: linear-gradient(to right, rgba(83, 192, 125, 0.7), rgba(83, 192, 125, 0.1)), url('../images/solar-panel.jpg')center/cover fixed no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     clip-path: polygon(0 0, 100% 0, 100% 75%, 0 95%);
-    background-size: 100%;
-    width: 100%;
 }
 
 .item-2 {
     background: linear-gradient(to bottom, rgba(83, 192, 125, 0.7), rgba(83, 192, 125, 0.1)), url('../images/wind-farm2.jpg')center/cover fixed no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     clip-path: polygon(0 18%, 100% 7%, 100% 77%, 0 94%);
-    background-size: 100%;
-    width: 100%;
 }
 
 .item-3 {
-    background: linear-gradient(to left, rgba(83, 192, 125, 0.7), rgba(83, 192, 125, 0.1)), url('../images/solar4.jpg')center/cover fixed no-repeat;
+    background: linear-gradient(to left, rgba(83, 192, 125, 0.7), rgba(83, 192, 125, 0.1)), url('../images/solar4.jpg')no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
-    background-size: 100%;
-    width: 100%;
 }
 
 .no-padding {
@@ -428,6 +434,13 @@ div#map {
     .top-icons {
         margin-left: auto;
         margin-right: auto;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .carousel-caption {
+        letter-spacing: 5px;
+        font-weight: 100;
     }
 }
 
