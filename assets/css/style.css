@@ -437,10 +437,16 @@ div#map {
     }
 }
 
-@media screen and (max-width: 992px) {
-    .carousel-caption {
+@media (max-width: 992px) {
+    .item-1, .item-2, .item-3 {
+        object-fit: cover;
+        object-position: center;
+        clip-path: none !important;
+    }
+    .carousel-caption h1 {
         letter-spacing: 5px;
         font-weight: 100;
+        font-size: 1em;
     }
 }
 
