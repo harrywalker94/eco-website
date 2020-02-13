@@ -439,8 +439,6 @@ div#map {
 
 @media (max-width: 992px) {
     .item-1, .item-2, .item-3 {
-        object-fit: cover;
-        object-position: center;
         clip-path: none !important;
     }
     .carousel-caption h1 {
