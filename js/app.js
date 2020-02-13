@@ -4,6 +4,11 @@ $(document).ready(function () {
     $(".navbar-toggler").toggleClass("change");
   });
 
+  /*Prevent burger icon changing when nav-link is clicked*/
+  $(".nav-link").click(function () {
+    $(".navbar-toggler").toggleClass("change");
+  });
+
   /* Icon hover color change */
   $(".icon-top a:nth-child(4)").hover(function () {
     $(".icon-hover").css("color", "#f1fffa");
