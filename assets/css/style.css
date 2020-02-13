@@ -145,7 +145,7 @@ nav {
 }
 
 .item-1 {
-    background: linear-gradient(to right, rgba(83, 192, 125, 0.7), rgba(83, 192, 125, 0.1)), url('../images/solar-panel.jpg')center/cover fixed no-repeat;
+    background: linear-gradient(to right, rgba(83, 192, 125, 0.7), rgba(83, 192, 125, 0.1)), center/cover fixed no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -154,7 +154,7 @@ nav {
 }
 
 .item-2 {
-    background: linear-gradient(to bottom, rgba(83, 192, 125, 0.7), rgba(83, 192, 125, 0.1)), url('../images/wind-farm2.jpg')center/cover fixed no-repeat;
+    background: linear-gradient(to bottom, rgba(83, 192, 125, 0.7), rgba(83, 192, 125, 0.1)), center/cover fixed no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -163,7 +163,7 @@ nav {
 }
 
 .item-3 {
-    background: linear-gradient(to left, rgba(83, 192, 125, 0.7), rgba(83, 192, 125, 0.1)), url('../images/solar4.jpg')no-repeat center center fixed;
+    background: linear-gradient(to left, rgba(83, 192, 125, 0.7), rgba(83, 192, 125, 0.1)), url('../images/solar4.jpg'), no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
