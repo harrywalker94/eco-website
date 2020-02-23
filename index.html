@@ -32,11 +32,8 @@
             <a href="#" class="m-2"><i class="fab fa-facebook-square"></i></a>
             <a href="#" class="m-2"><i class="fab fa-instagram"></i></a>
             <a href="#" class="m-2 pr-3"><i class="fab fa-linkedin"></i></a>
-            <a href="tel:07983351663"><i class="icon-hover fas fa-phone-alt"></i><i
-                class="icon-hover3 fas fa-phone-alt"></i><span class="details"></a>
-            <a href="#contact-us"><i class="icon-hover2 fas fa-envelope"></i><i class="icon-hover3 fas fa-envelope"></i>
-            </a>
-
+            <a href="tel:07983351663" class="pl-1 mr-2"><i class="fas fa-phone-alt"></i></a>
+            <a href="#contact"><i class="fas fa-envelope"></i></a>
           </div>
         </div>
       </div>
@@ -52,13 +49,16 @@
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="navbar-nav m-3 mx-auto">
           <li class="nav-item">
-            <a href="#header" class="nav-link mx-2 text-uppercase active">Home</a>
+            <a href="#header" class="nav-link mx-2 text-uppercase">Home</a>
           </li>
           <li class="nav-item">
             <a href="#about-us" class="nav-link mx-2 text-uppercase">About Us</a>
           </li>
           <li class="nav-item">
-            <a href="#services" class="nav-link mx-2 text-uppercase">Services</a>
+            <a href="#products" class="nav-link mx-2 text-uppercase">Products</a>
+          </li>
+          <li class="nav-item">
+            <a href="#reviews" class="nav-link mx-2 text-uppercase">Reviews</a>
           </li>
           <li class="nav-item">
             <a href="#contact" class="nav-link mx-2 text-uppercase">Contact Us</a>
@@ -71,7 +71,7 @@
   </header>
 
   <!--Slider-->
-  <div class="container-fluid">
+  <div class="container-fluid slider">
     <div class="row">
       <div class="col no-padding">
         <div class="carousel slide d-none d-md-block" id="demo-slider" data-ride="carousel">
@@ -91,7 +91,7 @@
             <!--Image 2-->
             <div class="item-2 carousel-item">
 
-              <div class="carousel-caption mb-5 text-center">
+              <div class="carousel-caption mb-5 text-left">
                 <h1 class="text-uppercase mb-2">
                   Environmental Sustainability
                 </h1>
@@ -103,7 +103,7 @@
             <!--Image 3-->
             <div class="item-3 carousel-item">
 
-              <div class="carousel-caption mb-5 text-left">
+              <div class="carousel-caption mb-5 text-center">
                 <h1 class="text-uppercase mb-2">
                   Dedicated to a greener future
                 </h1>
@@ -170,13 +170,15 @@
  End parralax for mobile devices-->
   <!--About Us Section-->
   <section id="about-us" class="pb-5 pt-5">
-    <div class="container">
-      <div class="row title mb-2 mt-2" data-aos="fade-up">
+    <div class="container-fluid">
+      <div class="row title mb-4 mt-2" data-aos="fade-in">
         <div class="col text-center">
           <h1 class="text-uppercase">About Us</h1>
           <h3 class="text-capitalize">
             Lorem ipsum dolor sit amet.
           </h3>
+          <div class="title-underline mt-3 mb-3"></div>
+
           <p class="text-capitalize">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur vitae
             voluptates magnam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus
             doloribus, veniam ut
@@ -184,9 +186,17 @@
             distinctio quibusdam
             inventore hic, voluptatem sapiente. Magnam autem sapiente officia unde quae quis eveniet nobis
             deserunt!</p>
-          <a href="#" class="mb-0"><i class="fas fa-leaf"></i></a>
-          <div class="title-underline"></div>
-          <a href="about-us.html" class="btn btn-md mt-5 text-uppercase about-us-btn">Find out More</a>
+
+          <!--<a href="about-us.html" class="btn btn-sm mt-5 text-uppercase about-us-btn">Find out More</a>-->
+
+          <a href="about-us.html" class="btn-animate text-capitalize btn-sm">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            Find out more...
+          </a>
+
 
 
         </div>
@@ -196,7 +206,7 @@
   </section>
   <!--End About Us Section-->
   <!--Filler-->
-  <div id="services" class="container-fluid">
+  <div id="products" class="container-fluid">
     <div class="row">
       <div class="col filler text-center">
         <h2 class="display-10 text-uppercase p-3">
@@ -219,7 +229,8 @@
             <h3>Solar PV</h3>
           </div>
           <div>
-            <h6>Find Out More</h6>
+            <a href="solar-pv.html" target="_blank" class="btn btn-sm mt-2 text-uppercase services-btn">Find out
+              More</a>
           </div>
         </div>
       </div>
@@ -230,7 +241,8 @@
             <h3>Air-Source Heat Pumps</h3>
           </div>
           <div>
-            <h6>Find Out More</h6>
+            <a href="air-source.html" target="_blank" class="btn btn-sm mt-2 text-uppercase services-btn">Find out
+              More</a>
           </div>
         </div>
       </div>
@@ -241,7 +253,7 @@
             <h3>Battery Storage Systems</h3>
           </div>
           <div>
-            <h6>Find Out More</h6>
+            <a href="about-us.html" class="btn btn-sm mt-2 text-uppercase services-btn">Find out More</a>
           </div>
         </div>
       </div>
@@ -256,7 +268,7 @@
             <h3>Inverter Systems</h3>
           </div>
           <div>
-            <h6>Find Out More</h6>
+            <a href="about-us.html" class="btn btn-sm mt-2 text-uppercase services-btn">Find out More</a>
           </div>
         </div>
       </div>
@@ -264,10 +276,10 @@
         <img class="img-fluid services-grid" src="assets/images/solar2.jpg" alt="" id="imgDemo">
         <div class="text-block">
           <div>
-            <h3>Solar Panels</h3>
+            <h3>Air to Air</h3>
           </div>
           <div>
-            <h6>Find Out More</h6>
+            <a href="about-us.html" class="btn btn-sm mt-2 text-uppercase services-btn">Find out More</a>
           </div>
         </div>
       </div>
@@ -275,10 +287,10 @@
         <img class="img-fluid services-grid" src="assets/images/solar2.jpg" alt="" id="imgDemo">
         <div class="text-block">
           <div>
-            <h3>Solar Panels</h3>
+            <h3>Gas Boilers</h3>
           </div>
           <div>
-            <h6>Find Out More</h6>
+            <a href="about-us.html" class="btn btn-sm mt-2 text-uppercase services-btn">Find out More</a>
           </div>
         </div>
       </div>
@@ -286,183 +298,129 @@
   </div>
   <!--End Case Studies Section-->
 
+  <!--Start Reviews Section-->
+  <!--Filler-->
+  <div id="reviews" class="container-fluid">
+    <div class="row">
+      <div class="col filler text-center">
+        <h2 class="display-10 text-uppercase p-3">
+          <span>Reviews&nbsp; &nbsp;</span>
+        </h2>
 
-  <!--Start Services Section-->
-  <div class="container-fluid text-center">
-    <div class="row justify-content-md-center">
-      <div class="col-md-5 services-grid-div" data-aos="fade-in">
-        <img class="img-fluid services-img" src="assets/images/solar3.jpg" alt="" id="imgDemo">
-      </div>
-      <div class="col-md-5 services-grid-div2" data-aos="fade-in">
-        <div class="text-block">
-          <div>
-            <h3>Air-Source Heat Pumps</h3>
-          </div>
-          <div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores consequatur illo deleniti architecto,
-              earum quia, porro, dolorem praesentium dolores itaque exercitationem! Adipisci consectetur ipsam animi
-              blanditiis exercitationem aperiam! Corporis fugit cupiditate possimus harum totam ratione in ullam
-              repellendus ipsa non.</p>
-          </div>
-          <div>
-            <h6>Find Out More</h6>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="row justify-content-md-center">
-      <div class="col-md-5 services-grid-div2" data-aos="fade-in">
-        <div class="text-block">
-          <div>
-            <h3>Air-Source Heat Pumps</h3>
-          </div>
-          <div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores consequatur illo deleniti architecto,
-              earum quia, porro, dolorem praesentium dolores itaque exercitationem! Adipisci consectetur ipsam animi
-              blanditiis exercitationem aperiam! Corporis fugit cupiditate possimus harum totam ratione in ullam
-              repellendus ipsa non.</p>
-          </div>
-          <div>
-            <h6>Find Out More</h6>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-5 services-grid-div" data-aos="fade-in">
-        <img class="img-fluid services-img" src="assets/images/solar4.jpg" alt="" id="imgDemo">
-      </div>
-    </div>
-
-
-
-    <div class="row justify-content-md-center">
-      <div class="col-md-5 services-grid-div" data-aos="fade-in">
-        <img class="img-fluid services-img" src="assets/images/solar4.jpg" alt="" id="imgDemo">
-        <div class="text-block">
-          <div>
-            <h3>Air-Source Heat Pumps</h3>
-          </div>
-          <div>
-            <h6>Find Out More</h6>
-          </div>
-          <div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores consequatur illo deleniti architecto,
-              earum quia, porro, dolorem praesentium dolores itaque exercitationem! Adipisci consectetur ipsam animi
-              blanditiis exercitationem aperiam! Corporis fugit cupiditate possimus harum totam ratione in ullam
-              repellendus ipsa non.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-5 services-grid-div" data-aos="fade-in">
-        <img class="img-fluid services-img" src="assets/images/solar4.jpg" alt="" id="imgDemo">
-        <div class="text-block">
-          <div>
-            <h3>Air-Source Heat Pumps</h3>
-          </div>
-          <div>
-            <h6>Find Out More</h6>
-          </div>
-        </div>
-      </div>
-    </div>
-
-
-    <div class="row justify-content-md-center">
-      <div class="col-md-5 services-grid-div" data-aos="fade-in">
-        <img class="img-fluid services-img" src="assets/images/solar4.jpg" alt="" id="imgDemo">
-        <div class="text-block">
-          <div>
-            <h3>Air-Source Heat Pumps</h3>
-          </div>
-          <div>
-            <h6>Find Out More</h6>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-5 services-grid-div" data-aos="fade-in">
-        <img class="img-fluid services-img" src="assets/images/solar4.jpg" alt="" id="imgDemo">
-        <div class="text-block">
-          <div>
-            <h3>Air-Source Heat Pumps</h3>
-          </div>
-          <div>
-            <h6>Find Out More</h6>
-          </div>
-        </div>
       </div>
     </div>
   </div>
-  <!--End Services Section-->
+  <!--End Filler-->
+  <div class="container-fluid">
+    <div class="row pt-5 pl-5 pr-5">
+      <div class="col-md-6 review-1">
+        <h1>Review 1</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et sapiente at soluta, rem consequuntur dolor eos
+          itaque veritatis incidunt delectus.</p>
+      </div>
+      <div class="col-md-6 review-2">
+        <h1>Review 2</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et sapiente at soluta, rem consequuntur dolor eos
+          itaque veritatis incidunt delectus.</p>
+      </div>
+    </div>
+    <div class="row pb-5 pl-5 pr-5">
+      <div class="col-md-6 review-3">
+        <h1>Review 3</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et sapiente at soluta, rem consequuntur dolor eos
+          itaque veritatis incidunt delectus.</p>
+      </div>
+      <div class="col-md-6 review-4">
+        <h1>Review 4</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et sapiente at soluta, rem consequuntur dolor eos
+          itaque veritatis incidunt delectus.</p>
+        <a href="#header" class="text-center" id="topBtn"><i class="fas fa-arrow-up"></i></a>
+
+      </div>
+    </div>
+  </div>
+
+  <!--End Reviews Section-->
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-8 mx-auto">
+        <div class="map" id="map"></div>
+      </div>
+    </div>
+  </div>
+
+
 
 
   <!--Start Contact Section-->
   <footer class="footer" id="contact">
-    <div>
-      <div class="container-fluid footer">
-        <div class="row justify-content-md-left" data-aos="fade-in">
-          <div class="col-md-3">
-            <img src="assets/images/newlogo2.png" alt="Eco Advanced Logo" class="footer-logo">
-            <span>
-              <p>Call us now for a free quote!</p>
-              <strong>Our Location</strong>
-              <p>15 Street Name<br>Our City, UK</p>
-              <strong>Contact Info</strong>
-              <p>08000 080034<br>email@email.com</p>
-            </span>
-            <br>
-            <br>
-            <hr class="copy-right">&copy; ECO Advanced
-
-          </div>
-
-          <div class="col-md-7">
-            <h3>Contact Us</h3>
-            <form id="contact form">
-              <div class="messages"></div>
-              <div class="controls">
-                <div class="form-group">
-                  <input id="form_name" type="text" name="name" class="form-control" placeholder="Enter your name."
-                    required="required">
-                </div>
-                <div class="form-group">
-                  <input id="form_email" type="text" name="email" class="form-control" placeholder="Enter your email."
-                    required="required">
-                </div>
-                <div class="form-group">
-                  <textarea id="form_message" type="text" name="message" class="form-control h-25"
-                    placeholder="Add your message." rows="5" required="required"></textarea>
-                </div>
-                <input type="submit" class="btn btn-outline-light btn-md" value="Send Message">
-
-              </div>
-            </form>
-
-          </div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-3 col-sm-6 col-xs-12 contact-one">
+          <h5 class="text-center">Eco Advanced</h5>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad iste illum ratione. Voluptates, facilis.
+            Reprehenderit quam rerum exercitationem corrupti nesciunt.</p>
         </div>
+        <div class="col-md-3 col-sm-6 col-xs-12 contact-two">
+          <h5 class="text-center">Useful Links</h5>
+          <ul class="">
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Testimonials</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
 
-
+          </ul>
+        </div>
+        <div class="col-md-3 col-sm-6 col-xs-12 contact-three text-center">
+          <h5 class="text-center">Social</h5>
+          <p>Follow us!</p>
+          <span>
+            <a href="#" class="mr-1"><i class="fab fa-facebook-square"></i></a>
+            <a href="#" class="m-1"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="m-1"><i class="fab fa-linkedin"></i></a>
+          </span>
+        </div>
+        <div class="col-md-3 col-sm-6 col-xs-12 contact-four text-center">
+          <h5 class="">Contact Us</h5>
+          <ul>
+            <li><a href="#" class=""><i class="fas fa-map-marker-alt mr-2"></i>2, Business Park, Nazeing</a></li>
+            <li><a href="#" class=""><i class="fas fa-phone-alt mr-2"></i>0800 9234 990</a></li>
+            <li><a href="#" class=""><i class="fas fa-envelope mr-2"></i>eco@ecoadvanced.com</a></li>
+          </ul>
+        </div>
       </div>
     </div>
   </footer>
   <!--End Contact Section-->
+  <!--Filler-->
+  <div id="services" class="container-fluid">
+    <div class="row">
+      <div class="col filler-footer text-left">
+        <p class="pt-2"> 2020 Eco Advanced &copy;. All rights reserved</p>
+        <hr>
+      </div>
+    </div>
+  </div>
+  <!--End Filler-->
 
 
 
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
     AOS.init({
-      offset: 200,
-      duration: 1700
+      offset: 50,
+      duration: 1600
     });
   </script>
   <script src="js/jquery-3.4.1.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/app.js"></script>
-  <!-- <script
+  <script
     src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
   <script
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDDwq9-DSGt16s77pxQJv3zaOWbaiIH1q0&callback=initMap"></script>-->
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDDwq9-DSGt16s77pxQJv3zaOWbaiIH1q0&callback=initMap"></script>
 </body>
 
 </html>
