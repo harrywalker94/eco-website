@@ -8,6 +8,7 @@
     <script src="https://kit.fontawesome.com/254edfe59b.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="plugins/magnific/magnific-popup.css">
     <link rel="stylesheet" href="assets/css/style.css" />
     <link href="https://fonts.googleapis.com/css?family=Karla&display=swap" rel="stylesheet">
     <title>Eco Advanced</title>
@@ -62,23 +63,23 @@
                         <a href="#contact" class="nav-link mx-2 text-uppercase">Contact Us</a>
                     </li>
                 </ul>
-                <a href="index.html" class="navbar-logo"><img src="assets/images/newlogo3.png"
+                <a href="index.html" class="navbar-logo"><img src="assets/images/logos/newlogo3.png"
                         alt="Eco-advanced-logo" /></a>
 
             </div>
         </nav>
     </header>
     <div class="container-fluid no-padding">
-        <div class="airsource-parallax"></div>
+        <div class="solarpv-parallax"></div>
         <div class="product-header">
             <h1>Solar Panels</h1>
         </div>
     </div>
 
-    <div class="container airsource-container mt-4 mb-4">
+    <div class="container product-container">
         <div class="row">
             <div class="col-md-5 product-img" data-aos="fade-in">
-                <img class="img-fluid" src="assets/images/solar4.jpg" alt="" id="imgDemo">
+                <img class="img-fluid" src="assets/images/solar-pv/solar5.jpg" alt="" id="imgDemo">
 
             </div>
             <div class="col-md-7" data-aos="fade-up-left">
@@ -86,35 +87,34 @@
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, commodi inventore id maiores quod
                     nam nulla, repudiandae quaerat numquam illum culpa quas consequuntur? Molestiae fugiat ipsum
-                    corporis quisquam quas vero corrupti itaque dicta, repellat neque cum vel tenetur odio, nobis
-                    reprehenderit libero nesciunt explicabo? Velit, sequi. Officia vel esse dolor?
+                    corporis quisquam quas vero corrupti itaque dicta.
                 </p>
 
-                <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti quidem culpa cumque unde
-                    repudiandae laboriosam ipsa, tempore deleniti voluptatibus inventore, quod, ducimus velit quasi
-                    soluta excepturi dolorum obcaecati maxime. Nostrum?
-                </p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta dolor eos corporis error quos velit
+                    obcaecati ex corrupti et laboriosam. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos,
+                    autem.</p>
+                <button class="pop-up" id="open-popup1" cl>See more</button>
             </div>
         </div>
     </div>
-    <div class="container-fluid brand-logo mt-4 mb-4">
+
+    <div class="container-fluid brand-logo">
         <div class="row">
             <div class="col-md-3" data-aos="flip-up">
-                <div class="text-center"> <img src="assets/images/lg.png" alt=""></div>
+                <div class="text-center"> <img src="assets/images/logos/lg.png" alt=""></div>
             </div>
             <div class="col-md-3" data-aos="flip-up">
-                <div class="text-center"> <img src="assets/images/mitsubishi.png" alt=""></div>
+                <div class="text-center"> <img src="assets/images/logos/mitsubishi.png" alt=""></div>
             </div>
             <div class="col-md-3" data-aos="flip-up">
-                <div class="text-center"> <img src="assets/images/fujitsu.png" alt=""></div>
+                <div class="text-center"> <img src="assets/images/logos/daikin.png" alt=""></div>
             </div>
             <div class="col-md-3" data-aos="flip-up">
-                <div class="text-center"> <img src="assets/images/daikin.png" alt=""></div>
+                <div class="text-center"> <img src="assets/images/logos/fujitsu.png" alt=""></div>
             </div>
         </div>
     </div>
-    </div>
+
 
 
 
@@ -124,7 +124,7 @@
     <!--Start Contact Section-->
     <footer class="footer" id="contact">
         <div class="container-fluid">
-            <div class="row">
+            <div class="row p-2">
                 <div class="col-md-3 col-sm-6 col-xs-12 contact-one">
                     <h5 class="text-center">Eco Advanced</h5>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad iste illum ratione. Voluptates,
@@ -138,8 +138,6 @@
                         <li><a href="#">Services</a></li>
                         <li><a href="#">Testimonials</a></li>
                         <li><a href="#">Privacy Policy</a></li>
-                        <li><a href="#">Terms & Conditions</a></li>
-
                     </ul>
                 </div>
                 <div class="col-md-3 col-sm-6 col-xs-12 contact-three text-center">
@@ -154,8 +152,7 @@
                 <div class="col-md-3 col-sm-6 col-xs-12 contact-four text-center">
                     <h5 class="">Contact Us</h5>
                     <ul>
-                        <li><a href="#" class=""><i class="fas fa-map-marker-alt mr-2"></i>2, Business Park,
-                                Nazeing</a>
+                        <li><a href="#" class=""><i class="fas fa-map-marker-alt mr-2"></i>2, Business Park, Nazeing</a>
                         </li>
                         <li><a href="#" class=""><i class="fas fa-phone-alt mr-2"></i>0800 9234 990</a></li>
                         <li><a href="#" class=""><i class="fas fa-envelope mr-2"></i>eco@ecoadvanced.com</a></li>
@@ -182,12 +179,13 @@
     <script>
         AOS.init({
             offset: 50,
-            duration: 1000
+            duration: 2000
         });
     </script>
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="plugins/magnific/jquery.magnific-popup.min.js"></script>
     <script src="js/app.js"></script>
 
 </body>

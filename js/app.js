@@ -17,9 +17,15 @@ $(document).ready(function () {
       if ($(this).scrollTop() >= 149) {
         $(".navbar").addClass("navbar-background");
         $(".navbar").addClass("fixed-top");
+        $('.product-header').css({
+          'display': 'none'
+        })
       } else {
         $(".navbar").removeClass("navbar-background");
         $(".navbar").removeClass("fixed-top");
+        $('.product-header').css({
+          'display': 'initial'
+        })
       }
     });
   });
@@ -47,20 +53,171 @@ $(document).ready(function () {
       );
   });
 
+  /* Owl Carousel */
+  $('.owl-carousel').owlCarousel({
+    loop: true,
+    smartSpeed: 2000,
+    margin: 10,
+    nav: true,
+    responsive: {
+      0: {
+        items: 1
+      },
+      600: {
+        items: 1
+      },
+      1000: {
+        items: 1
+      }
+    }
+  })
+  $(".owl-prev").html('<div data-aos="fade-in"><i class="fa fa-chevron-left"></i></div>');
+  $(".owl-next").html('<div data-aos="fade-in"><i class="fa fa-chevron-right"></i></div>');
 
+  /* Magnific Image gallery */
+  // Solar PV
+  $('#open-popup1').magnificPopup({
+    items: [
+      {
+        src: '../assets/images/solar-pv/solarpv-diagram.png',
+        title: 'Solar PV'
+      },
+      {
+        src: '../assets/images/solar-pv/solar6.jpg',
+        title: 'Solar PV'
+      },
+      {
+        src: '../assets/images/solar-pv/solar1.jpg',
+        title: 'Solar PV'
+      }
+    ],
+    gallery: {
+      enabled: true
+    },
+    type: 'image' // this is a default type
+  });
+  // Air-Source Heat Pump
+  $('#open-popup2').magnificPopup({
+    items: [
+      {
+        src: '../assets/images/air-source/air-source-diagram3.jpg',
+        title: 'Air Source Heat Pump'
+      },
+      {
+        src: '../assets/images/air-source/air-source5.jpg',
+        title: 'Air Source Heat Pump'
+      },
+      {
+        src: '../assets/images/air-source/air-source6.jpg',
+        title: 'Air Source Heat Pump'
+      }
+    ],
+    gallery: {
+      enabled: true
+    },
+    type: 'image' // this is a default type
+  });
 
+  $('#open-popup3').magnificPopup({
+    items: [
+      {
+        src: '../assets/images/solar-pv/solarpv-diagram.png',
+        title: 'Solar PV'
+      },
+      {
+        src: '../assets/images/solar-pv/solar6.jpg',
+        title: 'Solar PV'
+      },
+      {
+        src: '../assets/images/solar-pv/solar1.jpg',
+        title: 'Solar PV'
+      }
+    ],
+    gallery: {
+      enabled: true
+    },
+    type: 'image' // this is a default type
+  });
+
+  $('#open-popup4').magnificPopup({
+    items: [
+      {
+        src: '../assets/images/solar-pv/solarpv-diagram.png',
+        title: 'Solar PV'
+      },
+      {
+        src: '../assets/images/solar-pv/solar6.jpg',
+        title: 'Solar PV'
+      },
+      {
+        src: '../assets/images/solar-pv/solar1.jpg',
+        title: 'Solar PV'
+      }
+    ],
+    gallery: {
+      enabled: true
+    },
+    type: 'image' // this is a default type
+  });
+
+  $('#open-popup5').magnificPopup({
+    items: [
+      {
+        src: '../assets/images/solar-pv/solarpv-diagram.png',
+        title: 'Solar PV'
+      },
+      {
+        src: '../assets/images/solar-pv/solar6.jpg',
+        title: 'Solar PV'
+      },
+      {
+        src: '../assets/images/solar-pv/solar1.jpg',
+        title: 'Solar PV'
+      }
+    ],
+    gallery: {
+      enabled: true
+    },
+    type: 'image' // this is a default type
+  });
+
+  $('#open-popup6').magnificPopup({
+    items: [
+      {
+        src: '../assets/images/solar-pv/solarpv-diagram.png',
+        title: 'Solar PV'
+      },
+      {
+        src: '../assets/images/solar-pv/solar6.jpg',
+        title: 'Solar PV'
+      },
+      {
+        src: '../assets/images/solar-pv/solar1.jpg',
+        title: 'Solar PV'
+      }
+    ],
+    gallery: {
+      enabled: true
+    },
+    type: 'image' // this is a default type
+  });
 });
 
+
+
 /* GoogleMaps API */
+
+/* Map Options */
+var options = {
+  zoom: 9,
+  center: {
+    lat: 51.739300,
+    lng: 0.048120
+  }
+}
+
 function initMap() {
-  var map = new google.maps.Map(document.getElementById("map"), {
-    /* Map Options */
-    zoom: 13,
-    center: {
-      lat: 51.739300,
-      lng: 0.048120
-    }
-  });
+  var map = new google.maps.Map(document.getElementById("map"), options);
 
   var marker = new google.maps.Marker({
     position: { lat: 51.739300, lng: 0.048120 },
@@ -73,21 +230,11 @@ function initMap() {
   marker.addListener('click', toggleBounce);
 
   var infoWindow = new google.maps.InfoWindow({
-    content: '<img src="assets/images/newlogo3.png"/> '
+    content: '<img class="map" src="assets/images/newlogo3.png" style="height:4rem"/>'
   });
 
   marker.addListener('click', function () {
     infoWindow.open(map, marker);
-  });
-
-  var circle = new google.maps.Circle({
-    map: map,
-    center: {
-      lat: 51.727798,
-      lng: 0.020863
-    },
-    radius: 100000
-
   });
 
   function toggleBounce() {
@@ -97,6 +244,7 @@ function initMap() {
       marker.setAnimation(google.maps.Animation.BOUNCE);
     }
   }
+
 
 }
 

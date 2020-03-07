@@ -9,6 +9,13 @@ body {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
+.container-fluid {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
 /*############### Icon Header  ###############*/
 
 .icon-top {
@@ -127,7 +134,7 @@ nav {
 }
 
 .item-1 {
-    background: linear-gradient(to right, rgba(83, 192, 125, 0.7), rgba(83, 192, 125, 0.1)), url('../images/solar-panel.jpg');
+    background: linear-gradient(to right, rgba(83, 192, 125, 0.5), rgba(83, 192, 125, 0.5)), url('../images/solar-pv/solar5.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -136,7 +143,7 @@ nav {
 }
 
 .item-2 {
-    background: linear-gradient(to bottom, rgba(83, 192, 125, 0.7), rgba(83, 192, 125, 0.1)), url('../images/wind-farm2.jpg');
+    background: linear-gradient(to bottom, rgba(83, 192, 125, 0.5), rgba(83, 192, 125, 0.5)), url('../images/wind-farm/windfarm3.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -145,7 +152,7 @@ nav {
 }
 
 .item-3 {
-    background: linear-gradient(to left, rgba(83, 192, 125, 0.7), rgba(83, 192, 125, 0.1)), url('../images/solar4.jpg');
+    background: linear-gradient(to left, rgba(83, 192, 125, 0.5), rgba(83, 192, 125, 0.5)), url('../images/environment/forest.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -193,69 +200,65 @@ nav {
 }
 
 .carousel-caption {
-    letter-spacing: 5px;
+    letter-spacing: 12px;
     font-weight: 100;
 }
 
 /*############### About Us ###############*/
 
-.title-underline {
-    height: 3px;
-    width: 750px;
-    background: rgba(83, 192, 125, 0.3);
-    margin: -18px auto 0 auto;
+.whoAreWe h3 {
+    font-weight: 800;
+    color: #707070;
 }
 
-.title a {
-    color: #214c32;
-    font-size: 20px;
-    margin-top: 10px;
-    transition: 1s ease;
+.whoAreWe strong {
+    color: #53c07d;
+    font-weight: 500;
 }
 
-.btn-animate {
-    position: absolute;
-    top: 90%;
-    left: 50%;
-    transform: translate(-50%, 50%);
-    padding: 5px 10px;
-    font-size: 20px;
-    letter-spacing: 2px;
-    text-decoration: none;
-    overflow: hidden;
-    transition: all 1s ease;
-    font-weight: 100;
-    margin-top: 20px;
-}
-
-.btn-animate span:nth-child(3) {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 3px;
-    background: linear-gradient(to left, #f1fffa, rgba(83, 192, 125, 0.3));
-    animation: animate3 1.5s linear infinite;
-}
-
-@keyframes animate3 {
-    0% {
-        transform: translateX(100%);
-    }
-    100% {
-        transform: translateX(-100%);
-    }
-}
-
-.btn-animate:hover span:nth-child(3) {
-    display: none;
-}
-
-.btn-animate:hover {
-    text-decoration: none;
+.button {
+    backface-visibility: hidden;
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+    white-space: nowrap;
+    background: #53c07d;
+    border-radius: 500px;
+    border: 0px solid #444;
+    border-width: 0px 0px 0px 0px;
+    padding: 8px 20px 8px 50px;
     color: #fff;
-    background: rgba(83, 192, 125, 0.8);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.9);
+    font-size: 15px;
+    font-family: Helvetica Neue;
+    font-weight: 900;
+    font-style: normal;
+    transition: ease-in-out 1s;
+}
+
+.button>i {
+    color: #53c07d;
+    font-size: 1em;
+    background: #fff;
+    border-radius: 100px;
+    border: 4px solid #53c07d;
+    border-width: 4px 4px 4px 4px;
+    padding: 11px 12px 11px 12px;
+    margin: 6px 6px 6px 6px;
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    bottom: -10px;
+    transition: ease-in-out 1s;
+}
+
+.button:hover {
+    background: #fff;
+    color: #53c07d;
+}
+
+.button:hover i {
+    background: #53c07d;
+    color: #fff;
 }
 
 .title h1, .title h3 {
@@ -276,10 +279,8 @@ nav {
     color: #fff;
     background: rgba(0, 0, 0, 0.2);
     transition: all 1s ease;
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.7);
     border-radius: 3px;
-    letter-spacing: 0px;
-    font-weight: 100;
+    font-weight: 400;
 }
 
 .about-us-btn:hover {
@@ -287,6 +288,7 @@ nav {
     background: rgba(83, 192, 125, 0.8);
     transform: translateY(-5px);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.9);
+    border-radius: 3px;
 }
 
 /*############### Services ###############*/
@@ -304,21 +306,18 @@ nav {
 
 .services-grid {
     opacity: 0.5;
+    width: 490px;
+    height: 264px;
+    transition: ease 2s;
 }
 
 .services-grid-div {
-    transition: ease-in-out 0.5s;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), center/cover fixed no-repeat;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7)), center/cover fixed no-repeat;
     padding: 0;
     margin: 0;
-}
-
-.services-grid-div button {
-    transition: ease-in-out 0.5s;
-    text-transform: capitalize;
-    font-weight: 100;
-    text-align: center;
-    padding: 5px;
+    width: 490px;
+    height: 264px;
+    transition: ease 1s;
 }
 
 .services-btn {
@@ -328,7 +327,7 @@ nav {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
     border-radius: 3px;
     letter-spacing: 2px;
-    font-weight: 100;
+    font-weight: 400;
 }
 
 .services-btn:hover {
@@ -348,51 +347,15 @@ nav {
     margin-bottom: 10px;
 }
 
-.services-grid-div:hover h6 {
-    transform: translateY(-3px);
+.services-grid-div:hover {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), center/cover fixed no-repeat;
+}
+
+.services-grid-div:hover .services-btn {
+    color: #fff;
+    background: rgba(83, 192, 125, 0.8);
+    transform: translateY(-5px);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.9);
-    cursor: pointer;
-}
-
-.services-grid-div2 {
-    padding: 0;
-    margin: 0;
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
-    transition: ease-in-out 1s;
-    background-size: 100%;
-}
-
-.services-grid-div2 h6 {
-    transition: ease-in-out 0.5s;
-    text-transform: capitalize;
-    font-weight: 100;
-    text-align: center;
-    background-color: #53c07d;
-}
-
-.services-grid-div2 h3 {
-    transition: ease-in-out 0.5;
-    text-transform: capitalize;
-    font-weight: 220;
-    text-align: left;
-    margin-bottom: 10px;
-}
-
-.services-grid-div2 p {
-    transition: ease-in-out 0.5;
-    text-transform: capitalize;
-    font-weight: 220;
-    text-align: left;
-}
-
-.services-grid-div2 h6:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.9);
-    cursor: pointer;
-}
-
-.container-fluid {
-    position: relative;
 }
 
 .text-block {
@@ -407,10 +370,10 @@ nav {
 
 #topBtn {
     position: fixed;
-    bottom: 40px;
+    bottom: 30px;
     right: 40px;
     font-size: 22px;
-    width: 50px;
+    width: 40px;
     height: 35px;
     background: rgba(83, 192, 125, 0.4);
     color: white;
@@ -418,21 +381,151 @@ nav {
     cursor: pointer;
     display: none;
     z-index: 99;
+    border-radius: 50%;
+    text-align: center;
 }
 
 /*############### Reviews ###############*/
 
-.review-1 {
-    border-right: solid 2px #53c07d;
-    border-bottom: solid 2px #53c07d;
+.section-padding {
+    padding: 3rem 0;
 }
 
-.review-2 {
-    border-bottom: solid 2px #53c07d;
+.flexbox-parent {
+    max-width: 95vw;
+    margin: 2rem auto;
 }
 
-.review-3 {
-    border-right: solid 2px #53c07d;
+@media screen and (min-width:768px) {
+    .flexbox-parent--medium {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+}
+
+.reviews {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/solar-pv/solar8.jpg') center/cover fixed no-repeat;
+    height: 70vh;
+}
+
+.quote__text {
+    color: var(--white);
+    line-height: 1.5;
+    font-size: 1rem;
+    padding: 0 1rem;
+}
+
+.quote__icon {
+    color: #53c07d;
+    font-size: 3rem;
+    margin: 0 1rem;
+}
+
+.quote__img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    margin: 1rem auto;
+}
+
+.quote__img-1 {
+    background: url('../images/googlemaps/map-colchester.png')center/cover no-repeat;
+}
+
+.quote__img-2 {
+    background: url('../images/googlemaps/map-maidstone.png')center/cover no-repeat;
+}
+
+.quote__img-3 {
+    background: url('../images/googlemaps/map-reading.png')center/cover no-repeat;
+}
+
+.quote__img-4 {
+    background: url('../images/googlemaps/map-stalbans.png')center/cover no-repeat;
+}
+
+.quote__name {
+    font-style: italic;
+    text-transform: capitalize;
+    margin: 0.5rem 0;
+    color: #f1fffa;
+}
+
+.quote__job {
+    text-transform: uppercase;
+    color: #53c07d;
+}
+
+.fa-chevron-left, .fa-chevron-right {
+    color: #53c07d;
+}
+
+@media screen and (min-width:768px) {
+    .quote {
+        display: flex;
+        justify-content: center;
+    }
+    .quote__text {
+        width: 60%;
+        align-self: center;
+        margin-left: 2rem;
+    }
+    .quote__icon {
+        align-self: flex-start;
+    }
+    .quote--reverse {
+        flex-direction: row-reverse;
+    }
+}
+
+.reviews-title-container {
+    display: flex;
+    padding: 2rem 1.5rem;
+}
+
+.reviews-title-icon {
+    font-size: 3rem;
+    color: #53c07d;
+    margin-right: 1rem;
+}
+
+.section-title__text {
+    line-height: 1.5;
+    border-left: 0.3rem solid #53c07d;
+    padding-left: 1rem;
+}
+
+.reviews-title-name {
+    font-size: 2rem;
+    letter-spacing: 0.5rem;
+    text-transform: uppercase;
+    color: #f1fffa;
+}
+
+.reviews-title-info {
+    color: #cacaca;
+}
+
+@media screen and (min-device-width: 315px) and (max-device-width: 325px) {
+    .reviews {
+        height: 180vh;
+        overflow: hidden;
+    }
+}
+
+@media screen and (min-device-width: 330px) and (max-device-width: 385px) {
+    .reviews {
+        height: 160vh;
+        overflow: hidden;
+    }
+}
+
+@media screen and (min-device-width: 390px) and (max-device-width: 460px) {
+    .reviews {
+        height: 130vh;
+        overflow: hidden;
+    }
 }
 
 /*############### Footer ###############*/
@@ -557,6 +650,7 @@ h5::before {
     letter-spacing: 1px;
     font-weight: 100;
     z-index: 98;
+    overflow: hidden;
 }
 
 hr {
@@ -572,29 +666,183 @@ hr {
 
 /*############### about-us.html ###############*/
 
+.aboutUsBg {
+    background: linear-gradient(to bottom, rgba(83, 192, 125, 0.4), rgba(83, 192, 125, 0.4)), url('../images/googlemaps/googlemaps3.png') center/cover fixed no-repeat;
+}
+
 .about-us-html {
-    background-color: rgba(83, 192, 125, 0.3);
+    background-color: rgba(112, 112, 112, .9);
 }
 
-.about-us-html img {
-    height: 16rem;
-    animation: example 1.5s infinite;
+.about-us-html a {
+    color: #f1fffa;
+    font-size: 2rem;
+    cursor: initial;
+    text-transform: uppercase;
 }
 
-@keyframes example {
+.about-us-html a:hover {
+    color: #f1fffa;
+    text-decoration: none;
+}
+
+.about-us-html h4 {
+    text-decoration: underline;
+    -webkit-text-decoration-color: #53c07d;
+    /* Safari */
+    text-decoration-color: #53c07d;
+    font-weight: 300;
+    color: #f1fffa;
+}
+
+.quote-img {
+    height: 9rem;
+    animation: shake 5s;
+    animation-iteration-count: infinite;
+    cursor: pointer;
+}
+
+@keyframes shake {
     0% {
-        transform: scale(1.0)
+        transform: translate(0px, 0px) rotate(0deg);
+    }
+    5% {
+        transform: translate(0px, 0px) rotate(0deg);
+    }
+    10% {
+        transform: translate(0px, 0px) rotate(0deg);
+    }
+    15% {
+        transform: translate(0px, 0px) rotate(0deg);
+    }
+    20% {
+        transform: translate(0px, 0px) rotate(0deg);
+    }
+    25% {
+        transform: translate(0px, 0px) rotate(0deg);
+    }
+    30% {
+        transform: translate(0px, 0px) rotate(0deg);
+    }
+    35% {
+        transform: translate(0px, 0px) rotate(0deg);
+    }
+    40% {
+        transform: translate(0px, 0px) rotate(0deg);
+    }
+    45% {
+        transform: translate(0px, 0px) rotate(0deg);
     }
     50% {
-        transform: scale(1.04)
+        transform: translate(0px, 0px) rotate(0deg);
+    }
+    55% {
+        transform: translate(0px, 0px) rotate(0deg);
+    }
+    60% {
+        transform: translate(0px, 0px) rotate(0deg);
+    }
+    65% {
+        transform: translate(0px, 0px) rotate(0deg);
+    }
+    70% {
+        transform: translate(0px, 0px) rotate(0deg);
+    }
+    71% {
+        transform: translate(0px, 0px) rotate(0deg);
+    }
+    72% {
+        transform: translate(0px, 0px) rotate(0deg);
+    }
+    73% {
+        transform: translate(0px, 0px) rotate(0deg);
+    }
+    74% {
+        transform: translate(0px, 0px) rotate(0deg);
+    }
+    75% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+    }
+    76% {
+        transform: translate(-3px, 1px) rotate(0deg);
+    }
+    77% {
+        transform: translate(3px, 1px) rotate(-1deg);
+    }
+    78% {
+        transform: translate(-1px, -1px) rotate(1deg);
+    }
+    79% {
+        transform: translate(1px, 2px) rotate(0deg);
+    }
+    80% {
+        transform: translate(1px, -2px) rotate(-1deg);
+    }
+    81% {
+        transform: translate(0px, -3px) rotate(0deg);
+    }
+    82% {
+        transform: translate(2px, 3px) rotate(0deg);
+    }
+    83% {
+        transform: translate(1px, -3px) rotate(0deg);
+    }
+    84% {
+        transform: translate(0px, 3px) rotate(0deg);
+    }
+    85% {
+        transform: translate(1px, 3px) rotate(0deg);
+    }
+    86% {
+        transform: translate(0px, 0px) rotate(0deg);
+    }
+    87% {
+        transform: translate(0px, 0px) rotate(0deg);
+    }
+    88% {
+        transform: translate(0px, 0px) rotate(0deg);
+    }
+    89% {
+        transform: translate(0px, 0px) rotate(0deg);
+    }
+    90% {
+        transform: translate(0px, 0px) rotate(0deg);
+    }
+    91% {
+        transform: translate(0px, 0px) rotate(0deg);
+    }
+    92% {
+        transform: translate(0px, 0px) rotate(0deg);
+    }
+    93% {
+        transform: translate(0px, 0px) rotate(0deg);
+    }
+    94% {
+        transform: translate(0px, 0px) rotate(0deg);
+    }
+    95% {
+        transform: translate(0px, 0px) rotate(0deg);
+    }
+    96% {
+        transform: translate(0px, 0px) rotate(0deg);
+    }
+    97% {
+        transform: translate(0px, 0px) rotate(0deg);
+    }
+    98% {
+        transform: translate(0px, 0px) rotate(0deg);
+    }
+    99% {
+        transform: translate(0px, 0px) rotate(0deg);
     }
     100% {
-        transform: scale(1.0)
+        transform: translate(0px, 0px) rotate(0deg);
     }
 }
 
 .about-us-html h3 {
     font-weight: 200;
+    color: #f1fffa;
 }
 
 .about-us-html strong {
@@ -602,32 +850,23 @@ hr {
     font-weight: 500;
 }
 
-.parallax2 {
-    /* Set a specific height */
-    min-height: 40vh;
-    /* Create the parallax scrolling effect with linear gradient */
-    background: linear-gradient(to bottom, rgba(83, 192, 125, 0.6), rgba(83, 192, 125, 0.6)), url('../images/renewable.jpg') center/cover fixed no-repeat;
+.about-us-html p {
+    color: #f1fffa;
 }
 
-.locations h3 {
-    letter-spacing: 1px;
-    font-weight: 300;
-    color: #ffffff;
-}
-
-.locations p {
-    font-size: 1.1rem;
-    font-weight: 400;
-}
-
-.locations ul {
+.filler ul {
     list-style: none;
-    font-size: 1.1rem;
-    font-weight: 400;
+    font-size: 1.2rem;
+    font-weight: 300;
 }
 
-.locations img {
-    height: 4rem;
+.filler p {
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+.map {
+    background: linear-gradient(to bottom, rgba(83, 192, 125, 0.4), rgba(83, 192, 125, 0.4)), center/cover fixed no-repeat;
 }
 
 /*############### products ###############*/
@@ -661,7 +900,7 @@ hr {
     background-position: center center;
     width: 100%;
     height: 100%;
-    clip-path: circle(100% at 9% 48%);
+    clip-path: polygon(0% 0%, 75% 0%, 93% 50%, 75% 100%, 0% 100%);
     opacity: .8;
 }
 
@@ -676,86 +915,56 @@ hr {
 
 .airsource-parallax {
     min-height: 40vh;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../images/airsource2.jpg') center/cover fixed no-repeat;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../images/air-source/air-source4.jpg') center/cover fixed no-repeat;
+}
+
+.pop-up {
+    padding: 10px;
+    color: #fff;
+    background: #707070;
+    transition: all 1s ease;
+    border-radius: 3px;
+    letter-spacing: 2px;
+    font-weight: 400;
+    transition: ease 1s;
+    text-transform: uppercase;
+}
+
+.pop-up:hover {
+    color: #fff;
+    background: rgba(83, 192, 125, 0.8);
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.9);
 }
 
 /*############### solar-pv.html ###############*/
 
 .solarpv-parallax {
     min-height: 40vh;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../images/solar-pv.jpg') center/cover fixed no-repeat;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../images/solar-pv/solar1.jpg') center/cover fixed no-repeat;
 }
-
-.airsource-container {
-    width: 100%;
-    max-width: 1200px;
-    margin: 20px auto;
-    background-color: white;
-    box-shadow: 0px 10px 5px 0px rgba(0, 0, 0, 0.2);
-}
-
-.product-header {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border-bottom: solid 2px #53c07d;
-}
-
-.product-header h1 {
-    text-transform: uppercase;
-    letter-spacing: 10px;
-    font-weight: 200;
-    color: #f1fffa;
-}
-
-.product-img {
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    width: 100%;
-    height: 100%;
-    clip-path: circle(100% at 9% 48%);
-    opacity: .8;
-}
-
-.brand-logo div img {
-    width: 200px;
-    height: 100px;
-    border: solid 1px rgba(0, 0, 0, 0.1);
-    box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.2);
-}
-
-/* -webkit-clip-path: ellipse(90% 70% at 0% 50%);
-    clip-path: ellipse(90% 70% at 0% 50%);
-    -webkit-shape-outside: ellipse(90% 70% at 0% 50%);
-    -webkit-shape-margin: 2em;
-    shape-margin: 2em;/*
-}
-
-.airsource-container p, h1, h3 {
-    padding: 1em 0;
-}
-
-.airsource-container p {
-    margin-right: 4em;
-}
-
-.airsource-container img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 30%;
-}
-
-ul {
-    list-style: none;
-}
-
-/*############### Google Maps API ###############*/
 
 div#map {
     min-height: 360px;
+}
+
+/*############### privacy.html ###############*/
+
+.privacy-logo img {
+    height: 6rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.privacy h2, h3 {
+    text-decoration: underline;
+    text-decoration-color: #53c07d;
+}
+
+.website-name {
+    color: #53c07d;
+    font-weight: 900;
 }
 
 @media (max-width: 450px) {
@@ -796,16 +1005,11 @@ div#map {
         margin-left: auto;
         margin-right: auto;
     }
-}
-
-@media (max-width: 992px) {
-    .item-1, .item-2, .item-3 {
-        clip-path: none !important;
+    .title-underline {
+        width: 50%;
     }
-    .carousel-caption h1 {
-        letter-spacing: 5px;
-        font-weight: 100;
-        font-size: 1em;
+    .about-us-html:nth-child(1) {
+        display: none;
     }
 }
 

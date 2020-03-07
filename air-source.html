@@ -8,6 +8,7 @@
     <script src="https://kit.fontawesome.com/254edfe59b.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="plugins/magnific/magnific-popup.css">
     <link rel="stylesheet" href="assets/css/style.css" />
     <link href="https://fonts.googleapis.com/css?family=Karla&display=swap" rel="stylesheet">
     <title>Eco Advanced</title>
@@ -62,7 +63,7 @@
                         <a href="#contact" class="nav-link mx-2 text-uppercase">Contact Us</a>
                     </li>
                 </ul>
-                <a href="index.html" class="navbar-logo"><img src="assets/images/newlogo3.png"
+                <a href="index.html" class="navbar-logo"><img src="assets/images/logos/newlogo3.png"
                         alt="Eco-advanced-logo" /></a>
 
             </div>
@@ -75,10 +76,11 @@
         </div>
     </div>
 
-    <div class="container product-container mt-4 mb-4">
+    <div class="container product-container">
         <div class="row">
             <div class="col-md-5 product-img">
-                <img class="img-fluid" src="assets/images/air-source1.jpg" alt="" id="imgDemo">
+                <img class="img-fluid" src="assets/images/air-source/air-source3.jpg" alt="" id="imgDemo"
+                    style="width: 100%; height: 100%;">
 
             </div>
             <div class="col-md-7">
@@ -86,34 +88,34 @@
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, commodi inventore id maiores quod
                     nam nulla, repudiandae quaerat numquam illum culpa quas consequuntur? Molestiae fugiat ipsum
-                    corporis quisquam quas vero corrupti itaque dicta, repellat neque cum vel tenetur odio, nobis
-                    reprehenderit libero nesciunt explicabo? Velit, sequi. Officia vel esse dolor?
+                    corporis quisquam quas vero corrupti itaque dicta.
                 </p>
 
-                <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti quidem culpa cumque unde
-                    repudiandae laboriosam ipsa, tempore deleniti voluptatibus inventore, quod, ducimus velit quasi
-                    soluta excepturi dolorum obcaecati maxime. Nostrum?
-                </p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta dolor eos corporis error quos velit
+                    obcaecati ex corrupti et laboriosam. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos,
+                    autem.</p>
+
+
+                <button class="pop-up" id="open-popup2" cl>See more</button>
             </div>
         </div>
     </div>
-    <div class="container-fluid brand-logo mt-4 mb-4">
+
+    <div class="container-fluid brand-logo">
         <div class="row">
-            <div class="col-md-3  ">
-                <div class="text-center"> <img src="assets/images/lg.png" alt=""></div>
+            <div class="col-md-3" data-aos="flip-up">
+                <div class="text-center"> <img src="assets/images/logos/lg.png" alt=""></div>
             </div>
-            <div class="col-md-3">
-                <div class="text-center"> <img src="assets/images/mitsubishi.png" alt=""></div>
+            <div class="col-md-3" data-aos="flip-up">
+                <div class="text-center"> <img src="assets/images/logos/mitsubishi.png" alt=""></div>
             </div>
-            <div class="col-md-3">
-                <div class="text-center"> <img src="assets/images/fujitsu.png" alt=""></div>
+            <div class="col-md-3" data-aos="flip-up">
+                <div class="text-center"> <img src="assets/images/logos/daikin.png" alt=""></div>
             </div>
-            <div class="col-md-3">
-                <div class="text-center"> <img src="assets/images/daikin.png" alt=""></div>
+            <div class="col-md-3" data-aos="flip-up">
+                <div class="text-center"> <img src="assets/images/logos/fujitsu.png" alt=""></div>
             </div>
         </div>
-    </div>
     </div>
 
 
@@ -138,8 +140,6 @@
                         <li><a href="#">Services</a></li>
                         <li><a href="#">Testimonials</a></li>
                         <li><a href="#">Privacy Policy</a></li>
-                        <li><a href="#">Terms & Conditions</a></li>
-
                     </ul>
                 </div>
                 <div class="col-md-3 col-sm-6 col-xs-12 contact-three text-center">
@@ -176,18 +176,24 @@
     </div>
     <!--End Filler-->
 
+    <button id="open-popup">Open popup</button>
+
+    <div id="my-popup" class="mfp-hide white-popup">
+        Inline popup
+    </div>
+
 
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init({
-            offset: 150,
-            duration: 1600
+            offset: 50,
+            duration: 2000
         });
     </script>
     <script src="js/jquery-3.4.1.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="plugins/magnific/jquery.magnific-popup.min.js"></script>
     <script src="js/app.js"></script>
 
 </body>
