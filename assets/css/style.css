@@ -407,6 +407,9 @@ nav {
 .reviews {
     background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/solar-pv/solar8.jpg') center/cover fixed no-repeat;
     height: 70vh;
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
 }
 
 .quote__text {
@@ -505,34 +508,6 @@ nav {
 
 .reviews-title-info {
     color: #cacaca;
-}
-
-@media screen and (min-device-width: 315px) and (max-device-width: 325px) {
-    .reviews {
-        height: 180vh;
-        overflow: hidden;
-    }
-}
-
-@media screen and (min-device-width: 359px) and (max-device-width: 369px) {
-    .reviews {
-        height: 145vh;
-        overflow: hidden;
-    }
-}
-
-@media screen and (min-device-width: 369px) and (max-device-width: 379px) {
-    .reviews {
-        height: 140vh;
-        overflow: hidden;
-    }
-}
-
-@media screen and (min-device-width: 390px) and (max-device-width: 460px) {
-    .reviews {
-        height: 125vh;
-        overflow: hidden;
-    }
 }
 
 /*############### Footer ###############*/
