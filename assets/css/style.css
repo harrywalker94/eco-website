@@ -410,6 +410,7 @@ nav {
     display: flex;
     flex-direction: column;
     overflow: scroll;
+    padding-bottom: 50px;
 }
 
 .quote__text {
