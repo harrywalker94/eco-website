@@ -514,16 +514,23 @@ nav {
     }
 }
 
-@media screen and (min-device-width: 330px) and (max-device-width: 385px) {
+@media screen and (min-device-width: 359px) and (max-device-width: 369px) {
     .reviews {
-        height: 160vh;
+        height: 145vh;
+        overflow: hidden;
+    }
+}
+
+@media screen and (min-device-width: 369px) and (max-device-width: 379px) {
+    .reviews {
+        height: 140vh;
         overflow: hidden;
     }
 }
 
 @media screen and (min-device-width: 390px) and (max-device-width: 460px) {
     .reviews {
-        height: 130vh;
+        height: 125vh;
         overflow: hidden;
     }
 }
@@ -957,7 +964,7 @@ div#map {
     margin-right: auto;
 }
 
-.privacy h2, h3 {
+.privacy h2, .privacy h3 {
     text-decoration: underline;
     text-decoration-color: #53c07d;
 }

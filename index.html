@@ -176,14 +176,13 @@
     <div class="container">
       <div class="row mb-4 mt-2 whoAreWe" data-aos="fade-in">
         <div class="col-md-10 offset-1 text-center">
-          <div class="">
+          <div>
             <h3 class="text-capitalize">
               Who are we? <strong class="text-uppercase">Eco Advanced</strong>.
             </h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis debitis vero optio, modi necessitatibus
               aliquid autem, maxime accusamus libero natus laudantium voluptatem illo consectetur animi omnis sequi
               provident. A, soluta.</p>
-
           </div>
 
           <div class="button">
@@ -489,8 +488,14 @@
   <script>
     AOS.init({
       offset: 50,
-      duration: 1600
+      duration: 1600,
+      disable: function () {
+        var maxWidth = 800;
+        return window.innerWidth < maxWidth;
+      }
     });
+
+
   </script>
   <script src="js/jquery-3.4.1.min.js"></script>
   <script src="js/bootstrap.bundle.min.js"></script>
