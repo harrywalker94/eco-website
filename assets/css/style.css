@@ -1,3 +1,5 @@
+/*############################## Global  ##############################*/
+
 * {
     margin: 0;
     padding: 0;
@@ -16,7 +18,22 @@ body {
     margin-left: auto;
 }
 
-/*############### Icon Header  ###############*/
+.no-padding {
+    padding: 0 !important;
+}
+
+.filler {
+    background: #53c07d;
+    color: #fff;
+    letter-spacing: 1px;
+    font-weight: 100;
+}
+
+.filler span {
+    background: rgba(33, 76, 50, 0.2);
+}
+
+/*############################## Icon Header  ##############################*/
 
 .icon-top {
     background: #53c07d;
@@ -67,7 +84,7 @@ body {
     transition: ease .5s;
 }
 
-/*############### Navbar ###############*/
+/*############################## Navbar ##############################*/
 
 nav {
     background-color: #ffffff;
@@ -86,7 +103,7 @@ nav {
     letter-spacing: 2px;
 }
 
-.navbar-background {
+.navbar-sticky {
     padding: 2px 20px;
     background: rgba(255, 255, 255, 0.8);
 }
@@ -127,7 +144,7 @@ nav {
     transform: rotate(45deg) translate(-5px, -8px);
 }
 
-/*############### Home-page Image Slider ###############*/
+/*############################## Desktop Home-page Slider ##############################*/
 
 .item-1, .item-2, .item-3 {
     min-height: 70vh;
@@ -160,41 +177,6 @@ nav {
     height: 100%;
 }
 
-.no-padding {
-    padding: 0 !important;
-}
-
-.slider-btn {
-    color: #fff;
-    background: rgba(0, 0, 0, 0.4);
-    transition: all 1s ease;
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
-    border-radius: 3px;
-    letter-spacing: 2px;
-    font-weight: 100;
-}
-
-.btn1:hover {
-    color: rgba(83, 192, 125, 0.8);
-    background: #fff;
-    transform: translateX(-7px);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.9);
-}
-
-.btn2:hover {
-    color: rgba(83, 192, 125, 0.8);
-    background: #fff;
-    transform: translateY(-7px);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.9);
-}
-
-.btn3:hover {
-    color: rgba(83, 192, 125, 0.8);
-    background: #fff;
-    transform: translateX(7px);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.9);
-}
-
 .slider {
     box-shadow: 0px 12px 5px 0px rgba(0, 0, 0, 0.2);
 }
@@ -204,28 +186,25 @@ nav {
     font-weight: 100;
 }
 
-/*############### About Us ###############*/
+/*############################## About Us ##############################*/
 
-.whoAreWe h3 {
+.about-us h3 {
     font-weight: 800;
     color: #707070;
 }
 
-.whoAreWe strong {
+.about-us strong {
     color: #53c07d;
     font-weight: 500;
 }
 
-.button {
+.about-us-btn {
     backface-visibility: hidden;
     position: relative;
     cursor: pointer;
     display: inline-block;
     white-space: nowrap;
     background: #53c07d;
-    border-radius: 500px;
-    border: 0px solid #444;
-    border-width: 0px 0px 0px 0px;
     padding: 8px 20px 8px 50px;
     color: #fff;
     font-size: 15px;
@@ -235,11 +214,10 @@ nav {
     transition: ease-in-out 1s;
 }
 
-.button>i {
+.about-us-btn>i {
     color: #53c07d;
     font-size: 1em;
     background: #fff;
-    border-radius: 100px;
     border: 4px solid #53c07d;
     border-width: 4px 4px 4px 4px;
     padding: 11px 12px 11px 12px;
@@ -248,70 +226,23 @@ nav {
     top: -10px;
     left: -10px;
     bottom: -10px;
-    transition: ease-in-out 1s;
+    transition: ease-in-out .5s;
 }
 
-.button:hover {
+.about-us-btn:hover {
     background: #fff;
     color: #53c07d;
 }
 
-.button:hover i {
+.about-us-btn:hover i {
     background: #53c07d;
     color: #fff;
+    transform: rotate(90deg);
 }
 
-.title h1, .title h3 {
-    letter-spacing: 5px;
-    font-weight: 100;
-    color: #214c32;
-}
+/*############################## Products ##############################*/
 
-.title p {
-    color: #214c32;
-}
-
-.title a {
-    letter-spacing: 1px;
-}
-
-.about-us-btn {
-    color: #fff;
-    background: rgba(0, 0, 0, 0.2);
-    transition: all 1s ease;
-    border-radius: 3px;
-    font-weight: 400;
-}
-
-.about-us-btn:hover {
-    color: #fff;
-    background: rgba(83, 192, 125, 0.8);
-    transform: translateY(-5px);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.9);
-    border-radius: 3px;
-}
-
-/*############### Services ###############*/
-
-.filler {
-    background: #53c07d;
-    color: #fff;
-    letter-spacing: 1px;
-    font-weight: 100;
-}
-
-.filler span {
-    background: rgba(33, 76, 50, 0.2);
-}
-
-.services-grid {
-    opacity: 0.5;
-    width: 490px;
-    height: 264px;
-    transition: ease 2s;
-}
-
-.services-grid-div {
+.products-grid-div {
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7)), center/cover fixed no-repeat;
     padding: 0;
     margin: 0;
@@ -320,24 +251,7 @@ nav {
     transition: ease 1s;
 }
 
-.services-btn {
-    color: #fff;
-    background: rgba(0, 0, 0, 0.2);
-    transition: all 1s ease;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
-    border-radius: 3px;
-    letter-spacing: 2px;
-    font-weight: 400;
-}
-
-.services-btn:hover {
-    color: #fff;
-    background: rgba(83, 192, 125, 0.8);
-    transform: translateY(-5px);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.9);
-}
-
-.services-grid-div h3 {
+.products-grid-div h3 {
     transition: ease-in-out 0.5;
     text-transform: capitalize;
     font-weight: 220;
@@ -347,18 +261,42 @@ nav {
     margin-bottom: 10px;
 }
 
-.services-grid-div:hover {
+.products-grid-div:hover {
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), center/cover fixed no-repeat;
 }
 
-.services-grid-div:hover .services-btn {
+.products-grid {
+    opacity: 0.5;
+    width: 490px;
+    height: 264px;
+    transition: ease 2s;
+}
+
+.products-btn {
+    color: #fff;
+    background: rgba(0, 0, 0, 0.2);
+    transition: all 1s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
+    border-radius: 3px;
+    letter-spacing: 2px;
+    font-weight: 400;
+}
+
+.products-btn:hover {
     color: #fff;
     background: rgba(83, 192, 125, 0.8);
     transform: translateY(-5px);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.9);
 }
 
-.text-block {
+.products-grid-div:hover .products-btn {
+    color: #fff;
+    background: rgba(83, 192, 125, 0.8);
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.9);
+}
+
+.products-text-block {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -385,67 +323,58 @@ nav {
     text-align: center;
 }
 
-/*############### Reviews ###############*/
-
-.section-padding {
-    padding: 3rem 0;
-}
-
-.flexbox-parent {
-    max-width: 95vw;
-    margin: 2rem auto;
-}
-
-@media screen and (min-width:768px) {
-    .flexbox-parent--medium {
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-    }
-}
+/*############################## Reviews Desktop ##############################*/
 
 .reviews {
     background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/solar-pv/solar8.jpg') center/cover fixed no-repeat;
     height: 70vh;
 }
 
-.quote__text {
+.reviews-title-container {
+    display: flex;
+    padding: 2rem 1.5rem;
+}
+
+.reviews-title-text {
+    line-height: 1.5;
+    border-left: 3px solid #53c07d;
+    padding-left: 1rem;
+}
+
+.reviews-title-icon {
+    font-size: 3rem;
+    color: #53c07d;
+    margin-right: 1rem;
+}
+
+.reviews-title-name {
+    font-size: 1.2rem;
+    letter-spacing: 0.5rem;
+    text-transform: uppercase;
+    color: #f1fffa;
+}
+
+.quote-icon {
+    color: #53c07d;
+    font-size: 3rem;
+    margin: 0 1rem;
+}
+
+.quote-text {
     color: var(--white);
     line-height: 1.5;
     font-size: 1rem;
     padding: 0 1rem;
 }
 
-.quote__icon {
-    color: #53c07d;
-    font-size: 3rem;
-    margin: 0 1rem;
-}
-
-.quote__img-1 {
-    background: url('../images/googlemaps/map-colchester.png')center/cover no-repeat;
-}
-
-.quote__img-2 {
-    background: url('../images/googlemaps/map-maidstone.png')center/cover no-repeat;
-}
-
-.quote__img-3 {
-    background: url('../images/googlemaps/map-reading.png')center/cover no-repeat;
-}
-
-.quote__img-4 {
-    background: url('../images/googlemaps/map-stalbans.png')center/cover no-repeat;
-}
-
-.quote__name {
+.quote-name {
     font-style: italic;
     text-transform: capitalize;
     margin: 0.5rem 0;
     color: #f1fffa;
 }
 
-.quote__job {
+.quote-location {
     text-transform: uppercase;
     color: #53c07d;
 }
@@ -459,65 +388,30 @@ nav {
         display: flex;
         justify-content: center;
     }
-    .quote__text {
+    .quote-text {
         width: 60%;
         align-self: center;
         margin-left: 2rem;
     }
-    .quote__icon {
+    .quote-icon {
         align-self: flex-start;
     }
-    .quote--reverse {
+    .quote-reverse {
         flex-direction: row-reverse;
     }
 }
 
-.reviews-title-container {
-    display: flex;
-    padding: 2rem 1.5rem;
-}
+/*############################## Reviews Mobile ##############################*/
 
-.reviews-title-icon {
-    font-size: 3rem;
-    color: #53c07d;
-    margin-right: 1rem;
+.reviews-mb {
+    background: linear-gradient(to right, rgba(123, 128, 124, 0.9), rgba(123, 128, 124, 0.9)), center/cover fixed no-repeat;
 }
-
-.section-title__text {
-    line-height: 1.5;
-    border-left: 3px solid #53c07d;
-    padding-left: 1rem;
-}
-
-.reviews-title-name {
-    font-size: 1.2rem;
-    letter-spacing: 0.5rem;
-    text-transform: uppercase;
-    color: #f1fffa;
-}
-
-.quote__text-mb {
-    color: var(--white);
-    line-height: 1.5;
-    font-size: .8rem;
-    padding: 0 1rem;
-}
-
-.reviews-title-info {
-    color: #cacaca;
-}
-
-/*############### Reviews Mobile ###############*/
 
 .reviews-mb-div {
     padding: 0;
     margin: 0;
     height: 100%;
     transition: ease 1s;
-}
-
-.reviews-mb {
-    background: linear-gradient(to right, rgba(123, 128, 124, 0.9), rgba(123, 128, 124, 0.9)), center/cover fixed no-repeat;
 }
 
 .reviews-title-icon-mb {
@@ -533,18 +427,7 @@ nav {
     color: #f1fffa;
 }
 
-.quote--reverse {
-    flex-direction: row-reverse;
-}
-
-.quote__img-mb {
-    border-radius: 50%;
-    width: 140px;
-    height: 140px;
-    margin: 1rem auto;
-}
-
-.quote__icon-mb {
+.quote-icon-mb {
     color: #53c07d;
     font-size: 2rem;
     margin: 0 1rem;
@@ -591,8 +474,24 @@ nav {
     margin: 15px 0 15px 0;
     text-transform: uppercase;
     letter-spacing: 2px;
-    font-weight: 100;
+    font-weight: 500;
     transition: all ease-in-out .6s;
+}
+
+.footer h5 {
+    color: #f1fffa;
+    margin: 15px 0 15px 0;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 2px;
+    font-weight: 500;
+    transition: all ease-in-out .6s;
+}
+
+@media screen and (max-width:768px) {
+    .footer h5 {
+        text-align: left;
+    }
 }
 
 h5::before {
@@ -636,6 +535,12 @@ h5::before {
     font-size: 20px;
     color: #53c07d;
     padding: 10px 11px;
+}
+
+@media screen and (max-width:768px) {
+    .contact-three a i {
+        text-align: left;
+    }
 }
 
 .contact-three a:nth-child(1) i:hover {
@@ -683,13 +588,15 @@ hr {
     margin-right: auto;
     border-style: inset;
     border-width: 1px;
-    background-color: #707070;
+    background-color: #53c07d;
 }
 
 /*############### about-us.html ###############*/
 
-.aboutUsBg {
-    background: linear-gradient(to bottom, rgba(83, 192, 125, 0.4), rgba(83, 192, 125, 0.4)), url('../images/googlemaps/googlemaps3.png') center/cover fixed no-repeat;
+@media screen and (max-width: 992px) {
+    .aboutUsBg {
+        background: linear-gradient(to bottom, rgba(83, 192, 125, 0.4), rgba(83, 192, 125, 0.4)), url('../images/googlemaps/googlemaps3.png') center/cover fixed no-repeat;
+    }
 }
 
 .about-us-html {

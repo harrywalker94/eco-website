@@ -15,13 +15,13 @@ $(document).ready(function () {
     $(window).scroll(function () {
       // Set distance user needs to scroll before fadeIn
       if ($(this).scrollTop() >= 149) {
-        $(".navbar").addClass("navbar-background");
+        $(".navbar").addClass("navbar-sticky");
         $(".navbar").addClass("fixed-top");
         $('.product-header').css({
           'display': 'none'
         })
       } else {
-        $(".navbar").removeClass("navbar-background");
+        $(".navbar").removeClass("navbar-sticky");
         $(".navbar").removeClass("fixed-top");
         $('.product-header').css({
           'display': 'initial'
@@ -39,7 +39,7 @@ $(document).ready(function () {
   });
 
   /* Smooth Scroll */
-  $(".nav-item a, .top-icons a, #topBtn").click(function (link) {
+  $(".nav-item a, .email, #topBtn").click(function (link) {
     link.preventDefault(); // preventDefault method stops the default action of an element happening
 
     let target = $(this).attr("href"); // Find the attribute of the href of the anchor link
