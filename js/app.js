@@ -39,7 +39,7 @@ $(document).ready(function () {
   });
 
   /* Smooth Scroll */
-  $(".nav-item a, .email, #topBtn").click(function (link) {
+  $(".nav-link, .email, #topBtn").click(function (link) {
     link.preventDefault(); // preventDefault method stops the default action of an element happening
 
     let target = $(this).attr("href"); // Find the attribute of the href of the anchor link

@@ -57,9 +57,21 @@
                     <li class="nav-item">
                         <a href="#about-us" class="nav-link mx-2 text-uppercase">About Us</a>
                     </li>
-                    <li class="nav-item">
-                        <a href="#products" class="nav-link mx-2 text-uppercase">Products</a>
-                    </li>
+                    <div class="btn-group">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link mx-2 text-uppercase dropdown-toggle" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">Products</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="air-source.html" target="_blank">Air-Source Heat
+                                    Pumps</a>
+                                <a class="dropdown-item" href="air-to-air.html" target="_blank">Air-to-Air</a>
+                                <a class="dropdown-item" href="battery-storage.html" target="_blank">Battery Storage</a>
+                                <a class="dropdown-item" href="gas-boilers.html" target="_blank">Gas Boilers</a>
+                                <a class="dropdown-item" href="inverter.html" target="_blank">Inverter Systems</a>
+                                <a class="dropdown-item" href="solar-pv.html" target="_blank">Solar PV</a>
+                            </div>
+                        </li>
+                    </div>
                     <li class="nav-item">
                         <a href="#reviews" class="nav-link mx-2 text-uppercase">Reviews</a>
                     </li>
@@ -77,15 +89,11 @@
 
     <!-- =============================== Start About Us  =============================== -->
     <div class="container-fluid">
-        <div class="row ml-5 mr-5 pt-4">
+        <div class="row ml-5 mr-5 pt-4 justify-content-around flex-column-reverse flex-lg-row">
             <!-- ========== Start Quote Icon ========== -->
-            <div class="col-md-5  offset-1 text-center about-us-html p-4">
-                <div data-aos="zoom-in">
-                    <a href="#contact"><img href="#contact" class="mb-3 mt-5 quote-img"
-                            src="assets/images/logos/house-logo.png" alt=""></a>
-                </div>
-                <div data-aos="slide-up">
-                    <a href="#" class="text-center" id="" data-aos="slide-up"><i class="fas fa-level-up-alt"></i></a>
+            <div class="col-md-6 text-center quote-icon-div p-4">
+                <div data-aos="zoom-in" class="mt-5 mb-5">
+                    <a href="tel:0800 1234 567" tel:><i class="fas fa-phone-volume quote-icon"></i></a>
                 </div>
                 <div data-aos="slide-up">
                     <h4 href="#" class="">Get a free
@@ -94,7 +102,7 @@
             </div>
             <!-- ========== End Quote Icon ========== -->
             <!-- ========== Start About Us Info ========== -->
-            <div class="col-md-5 text-center about-us-html p-4">
+            <div class="col-md-6 text-center about-us-html p-4">
                 <h3 class="text-capitalize" data-aos="zoom-in-up">
                     Who are we? <strong class="text-uppercase">Eco Advanced</strong>.
                 </h3>
@@ -118,13 +126,13 @@
     <div class="container-fluid">
         <div class="row ml-5 mr-5 pt-2 pb-2 no-gutters">
             <!-- ========== Start Google Map API ========== -->
-            <div class="col-md-5 offset-1 text-center about-us-html">
+            <div class="col-md-6  text-center">
                 <div class="map" id="map" data-aos="fade"></div>
 
             </div>
             <!-- ========== End Google Map API ========== -->
             <!-- ========== Start Contact Info ========== -->
-            <div class="col-md-5 text-center filler p-4">
+            <div class="col-md-6 text-center filler p-4">
                 <div>
                     <ul>
                         <li data-aos="zoom">
@@ -149,43 +157,38 @@
                     </ul>
                 </div>
             </div>
-            <!-- ========== Start Contact Info ========== -->
+            <!-- ========== End Contact Info ========== -->
         </div>
     </div>
     <!-- =============================== End About Us =============================== -->
-
-
-    <!--Start Contact Section-->
-    <footer class="footer" id="contact" data-aos="fade">
+    <!-- =============================== Start Contact Section =============================== -->
+    <footer class="footer" id="contact">
         <div class="container-fluid">
-            <div class="row p-2">
+            <div class="row">
                 <div class="col-md-3 col-sm-6 col-xs-12 contact-one">
-                    <h5 class="text-center">Eco Advanced</h5>
+                    <h5 class="">Eco Advanced</h5>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad iste illum ratione. Voluptates,
                         facilis.
                         Reprehenderit quam rerum exercitationem corrupti nesciunt.</p>
                 </div>
                 <div class="col-md-3 col-sm-6 col-xs-12 contact-two">
-                    <h5 class="text-center">Useful Links</h5>
+                    <h5 class="">Useful Links</h5>
                     <ul class="">
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">Testimonials</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
-                        <li><a href="#">Terms & Conditions</a></li>
-
+                        <li><a href="#about-us">About Us</a></li>
+                        <li><a href="#products">Products</a></li>
+                        <li><a href="#reviews">Reviews</a></li>
+                        <li><a href="privacy.html" target="_blank">Privacy Policy</a></li>
                     </ul>
                 </div>
-                <div class="col-md-3 col-sm-6 col-xs-12 contact-three text-center">
-                    <h5 class="text-center">Social</h5>
-                    <p>Follow us!</p>
+                <div class="col-md-3 col-sm-6 col-xs-12 contact-three">
+                    <h5 class="">Social</h5>
                     <span>
                         <a href="#" class="mr-1"><i class="fab fa-facebook-square"></i></a>
                         <a href="#" class="m-1"><i class="fab fa-instagram"></i></a>
                         <a href="#" class="m-1"><i class="fab fa-linkedin"></i></a>
                     </span>
                 </div>
-                <div class="col-md-3 col-sm-6 col-xs-12 contact-four text-center">
+                <div class="col-md-3 col-sm-6 col-xs-12 contact-four">
                     <h5 class="">Contact Us</h5>
                     <ul>
                         <li><a href="#" class=""><i class="fas fa-map-marker-alt mr-2"></i>2, Business Park, Nazeing</a>
@@ -197,20 +200,20 @@
             </div>
         </div>
     </footer>
-    <!--End Contact Section-->
-    <!--Filler-->
+    <!-- ========== Start Filler ========== -->
     <div id="services" class="container-fluid">
         <div class="row">
-            <div class="col filler-footer text-left">
+            <div class="col-md-12 filler-footer text-left">
                 <p class="pt-2"> 2020 Eco Advanced &copy;. All rights reserved</p>
                 <hr>
             </div>
         </div>
     </div>
-    <!--End Filler-->
+    <!-- ========== End Filler ========== -->
+    <!-- =============================== End Contact Section =============================== -->
 
 
-
+    <!-- AOS JS -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init({
@@ -223,14 +226,14 @@
         });
     </script>
     <script src="js/jquery-3.4.1.min.js"></script>
+    <!-- Bootstrap JS -->
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/app.js"></script>
-
+    <!-- Google Maps API -->
     <script
         src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
     <script
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDDwq9-DSGt16s77pxQJv3zaOWbaiIH1q0&callback=initMap"></script>
-
 </body>
 
 </html>
