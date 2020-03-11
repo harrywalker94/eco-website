@@ -46,7 +46,7 @@ The website is hosted using GitHub pages, deployed from the master branch. The d
 
 You can run this deployed site at: https://harrywalker94.github.io/plumbing-website/
 
-To run  this site locally, you can clone this repository directly into the editor of your choice by pasting __git clone https://harrywalker94.github.io/arctic-monkeys-webpage/index.html__ into your terminal. To cut ties with this GitHub repository, type __git remote rm origin__ into the terminal.
+To run  this site locally, you can clone this repository directly into the editor of your choice by pasting __git clone https://harrywalker94.github.io/plumbing-website/ into your terminal. To cut ties with this GitHub repository, type __git remote rm origin__ into the terminal.
 
 #  Credits
 
