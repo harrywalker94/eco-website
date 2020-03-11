@@ -1,61 +1,83 @@
 <!DOCTYPE html>
 <html>
 
+
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <link rel="shortcut icon" href="assets/images/newlogo3.png" />
+    <!-- Tab Icon -->
+    <link rel="shortcut icon" href="assets/images/logos/leaf-logo.png" />
+    <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/254edfe59b.js" crossorigin="anonymous"></script>
+    <!-- Boostrap CSS -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Karla&display=swap" rel="stylesheet">
+    <!-- Title -->
     <title>Eco Advanced</title>
-    <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.1/dist/email.min.js">
-  </script>
-  <script type="text/javascript">
-    (function () {
-      emailjs.init("user_QSsuF2Ynn05w4pSguXU5I");
-      emailjs.send('gmail', 'practice', { name: "Harry", notes: "This is my new project... " });
-    })();
-  </script>-->
 </head>
 
 <body>
-    <!--Start Header-->
-    <!--Icon Bar-->
+    <!-- =============================== Start Header =============================== -->
+    <!-- ========== Start Icon Bar ========== -->
     <header id="header">
         <div class="container-fluid icon-top py-2 px-3">
             <div class="row">
                 <div class="col d-flex justify-content-between align-items-baseline">
                     <div class="top-icons">
-                        <a href="#" class="m-2"><i class="fab fa-facebook-square"></i></a>
-                        <a href="#" class="m-2"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="m-2 pr-3"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.facebook.com/" target="_blank" class="m-2"><i
+                                class="fab fa-facebook-square"></i></a>
+                        <a href="https://www.instagram.com/" target="_blank" class="m-2"><i
+                                class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/" target="_blank" class="m-2 pr-3"><i
+                                class="fab fa-linkedin"></i></a>
                         <a href="tel:07983351663" class="pl-1 mr-2"><i class="fas fa-phone-alt"></i></a>
-                        <a href="#contact"><i class="fas fa-envelope"></i></a>
+                        <a href="#contact" class="email"><i class="fas fa-envelope"></i></a>
                     </div>
                 </div>
             </div>
         </div>
-        <!--Navbar-->
+        <!-- ========== End Icon Bar ========== -->
+
+        <!-- ========== Start Navbar ========== -->
         <nav id="navbar" class="navbar navbar-expand-lg">
+            <!-- ========== Start Burger Icon ========== -->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar">
                 <div class="bar1"></div>
                 <div class="bar2"></div>
                 <div class="bar3"></div>
             </button>
-
+            <!-- ========== End Burger Icon ========== -->
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="navbar-nav m-3 mx-auto">
                     <li class="nav-item">
-                        <a href="index.html" onclick="window.open('index.html',  '_self')"
+                        <a href="index.html" onclick="window.open('index.html',  '_blank')"
                             class="nav-link mx-2 text-uppercase">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#about-us" class="nav-link mx-2 text-uppercase">About Us</a>
+                        <a href="about-us.html" onclick="window.open('about-us.html',  '_blank')"
+                            class="nav-link mx-2 text-uppercase">About Us</a>
                     </li>
+                    <div class="btn-group d-flex justify-content-center text-center">
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link mx-2 text-uppercase dropdown-toggle" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Products</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="air-source.html" target="_blank">Air-Source Heat
+                                    Pumps</a>
+                                <a class="dropdown-item" href="air-to-air.html" target="_blank">Air-to-Air</a>
+                                <a class="dropdown-item" href="battery-storage.html" target="_blank">Battery Storage</a>
+                                <a class="dropdown-item" href="gas-boilers.html" target="_blank">Gas Boilers</a>
+                                <a class="dropdown-item" href="inverter.html" target="_blank">Inverter Systems</a>
+                                <a class="dropdown-item" href="solar-pv.html" target="_blank">Solar PV</a>
+                            </div>
+                        </li>
+                    </div>
                     <li class="nav-item">
-                        <a href="#services" class="nav-link mx-2 text-uppercase">Services</a>
+                        <a href="index.html#reviews" onclick="window.open('index.html#reviews',  '_blank')"
+                            class="nav-link mx-2 text-uppercase">Reviews</a>
                     </li>
                     <li class="nav-item">
                         <a href="#contact" class="nav-link mx-2 text-uppercase">Contact Us</a>
@@ -63,15 +85,18 @@
                 </ul>
                 <a href="index.html" class="navbar-logo"><img src="assets/images/logos/newlogo3.png"
                         alt="Eco-advanced-logo" /></a>
-
             </div>
         </nav>
+        <!-- ========== End Navbar ========== -->
     </header>
+    <!-- =============================== End Header =============================== -->
     <div class="container-fluid pl-4">
         <div class="row">
             <div class="col-md-12 mt-4 privacy">
-                <a href="index.html" class="privacy-logo"><img src="assets/images/logos/newlogo3.png"
-                        alt="Eco-advanced-logo" /></a>
+                <div class="mb-4">
+                    <a href="index.html" class="privacy-logo"><img src="assets/images/logos/newlogo3.png"
+                            alt="Eco-advanced-logo" /></a>
+                </div>
                 <h2>Privacy Policy</h2>
 
                 <p>At <span class="website_name">Eco Advanced</span>, we collect and manage user data according to the
@@ -156,35 +181,43 @@
         </div>
     </div>
 
-    <!--Start Contact Section-->
+
+    <!-- =============================== Start Contact Section =============================== -->
     <footer class="footer" id="contact">
         <div class="container-fluid">
-            <div class="row p-2">
+            <div class="row">
                 <div class="col-md-3 col-sm-6 col-xs-12 contact-one">
-                    <h5 class="text-center">Eco Advanced</h5>
+                    <h5 class="">Eco Advanced</h5>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad iste illum ratione. Voluptates,
                         facilis.
                         Reprehenderit quam rerum exercitationem corrupti nesciunt.</p>
                 </div>
                 <div class="col-md-3 col-sm-6 col-xs-12 contact-two">
-                    <h5 class="text-center">Useful Links</h5>
+                    <h5 class="">Useful Links</h5>
                     <ul class="">
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">Testimonials</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="index.html" onclick="window.open('index.html',  '_blank')">Home</a></li>
+                        <li><a href="about-us.html" onclick="window.open('about-us.html',  '_blank')">About Us</a></li>
+                        <li><a href="index.html#products"
+                                onclick="window.open('index.html#products',  '_blank')">Products</a></li>
+                        <li><a href="index.html#reviews"
+                                onclick="window.open('index.html#reviews',  '_blank')">Reviews</a>
+                        </li>
+                        <li><a href="privacy.html" onclick="window.open('privacy.html',  '_blank')">Privacy
+                                Policy</a></li>
                     </ul>
                 </div>
-                <div class="col-md-3 col-sm-6 col-xs-12 contact-three text-center">
-                    <h5 class="text-center">Social</h5>
-                    <p>Follow us!</p>
+                <div class="col-md-3 col-sm-6 col-xs-12 contact-three">
+                    <h5 class="">Social</h5>
                     <span>
-                        <a href="#" class="mr-1"><i class="fab fa-facebook-square"></i></a>
-                        <a href="#" class="m-1"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="m-1"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.facebook.com/" target="_blank" class="m-1"><i
+                                class="fab fa-facebook-square"></i></a>
+                        <a href="https://www.instagram.com/" target="_blank" class="m-1"><i
+                                class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedIn.com/" target="_blank" class="m-1"><i
+                                class="fab fa-linkedin"></i></a>
                     </span>
                 </div>
-                <div class="col-md-3 col-sm-6 col-xs-12 contact-four text-center">
+                <div class="col-md-3 col-sm-6 col-xs-12 contact-four">
                     <h5 class="">Contact Us</h5>
                     <ul>
                         <li><a href="#" class=""><i class="fas fa-map-marker-alt mr-2"></i>2, Business Park, Nazeing</a>
@@ -196,10 +229,24 @@
             </div>
         </div>
     </footer>
-    <!--End Contact Section-->
+    <!-- ========== Start Filler ========== -->
+    <div id="services" class="container-fluid">
+        <div class="row">
+            <div class="col-md-12 filler-footer text-left">
+                <p class="pt-2"> 2020 Eco Advanced &copy;. All rights reserved</p>
+                <hr>
+            </div>
+        </div>
+    </div>
+    <!-- ========== End Filler ========== -->
+    <!-- =============================== End Contact Section =============================== -->
 
+    </script>
+    <!-- jQuery JS -->
     <script src="js/jquery-3.4.1.min.js"></script>
+    <!-- Bootstrap JS -->
     <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- App.js -->
     <script src="js/app.js"></script>
 
 </body>

@@ -9,6 +9,10 @@ $(document).ready(function () {
     $(".navbar-toggler").toggleClass("change");
   });
 
+  $(".dropdown-item").click(function () {
+    $(".navbar-toggler").toggleClass("change");
+  });
+
   /* Navbar Fade In */
   // Hide Navbar initially
   $(function () {
@@ -39,7 +43,7 @@ $(document).ready(function () {
   });
 
   /* Smooth Scroll */
-  $(".nav-link, .email, #topBtn").click(function (link) {
+  $(".nav-link, .email, #topBtn, .contact-two li a").click(function (link) {
     link.preventDefault(); // preventDefault method stops the default action of an element happening
 
     let target = $(this).attr("href"); // Find the attribute of the href of the anchor link
@@ -53,157 +57,32 @@ $(document).ready(function () {
       );
   });
 
-  /* Owl Carousel */
-  $('.owl-carousel').owlCarousel({
-    loop: true,
-    smartSpeed: 2000,
-    margin: 10,
-    nav: true,
-    responsive: {
-      0: {
-        items: 1
-      },
-      600: {
-        items: 1
-      },
-      1000: {
-        items: 1
-      }
+  const $dropdown = $(".dropdown");
+  const $dropdownToggle = $(".dropdown-toggle");
+  const $dropdownMenu = $(".dropdown-menu");
+  const showClass = "show";
+
+  $(window).on("load resize", function () {
+    if (this.matchMedia("(min-width: 768px)").matches) {
+      $dropdown.hover(
+        function () {
+          const $this = $(this);
+          $this.addClass(showClass);
+          $this.find($dropdownToggle).attr("aria-expanded", "true");
+          $this.find($dropdownMenu).addClass(showClass);
+        },
+        function () {
+          const $this = $(this);
+          $this.removeClass(showClass);
+          $this.find($dropdownToggle).attr("aria-expanded", "false");
+          $this.find($dropdownMenu).removeClass(showClass);
+        }
+      );
+    } else {
+      $dropdown.off("mouseenter mouseleave");
     }
-  })
-  $(".owl-prev").html('<div data-aos="fade-in"><i class="fa fa-chevron-left"></i></div>');
-  $(".owl-next").html('<div data-aos="fade-in"><i class="fa fa-chevron-right"></i></div>');
-
-  /* Magnific Image gallery */
-  // Solar PV
-  $('#open-popup1').magnificPopup({
-    items: [
-      {
-        src: '../assets/images/solar-pv/solarpv-diagram.png',
-        title: 'Solar PV'
-      },
-      {
-        src: '../assets/images/solar-pv/solar6.jpg',
-        title: 'Solar PV'
-      },
-      {
-        src: '../assets/images/solar-pv/solar1.jpg',
-        title: 'Solar PV'
-      }
-    ],
-    gallery: {
-      enabled: true
-    },
-    type: 'image' // this is a default type
-  });
-  // Air-Source Heat Pump
-  $('#open-popup2').magnificPopup({
-    items: [
-      {
-        src: '../assets/images/air-source/air-source-diagram3.jpg',
-        title: 'Air Source Heat Pump'
-      },
-      {
-        src: '../assets/images/air-source/air-source5.jpg',
-        title: 'Air Source Heat Pump'
-      },
-      {
-        src: '../assets/images/air-source/air-source6.jpg',
-        title: 'Air Source Heat Pump'
-      }
-    ],
-    gallery: {
-      enabled: true
-    },
-    type: 'image' // this is a default type
-  });
-
-  $('#open-popup3').magnificPopup({
-    items: [
-      {
-        src: '../assets/images/solar-pv/solarpv-diagram.png',
-        title: 'Solar PV'
-      },
-      {
-        src: '../assets/images/solar-pv/solar6.jpg',
-        title: 'Solar PV'
-      },
-      {
-        src: '../assets/images/solar-pv/solar1.jpg',
-        title: 'Solar PV'
-      }
-    ],
-    gallery: {
-      enabled: true
-    },
-    type: 'image' // this is a default type
-  });
-
-  $('#open-popup4').magnificPopup({
-    items: [
-      {
-        src: '../assets/images/solar-pv/solarpv-diagram.png',
-        title: 'Solar PV'
-      },
-      {
-        src: '../assets/images/solar-pv/solar6.jpg',
-        title: 'Solar PV'
-      },
-      {
-        src: '../assets/images/solar-pv/solar1.jpg',
-        title: 'Solar PV'
-      }
-    ],
-    gallery: {
-      enabled: true
-    },
-    type: 'image' // this is a default type
-  });
-
-  $('#open-popup5').magnificPopup({
-    items: [
-      {
-        src: '../assets/images/solar-pv/solarpv-diagram.png',
-        title: 'Solar PV'
-      },
-      {
-        src: '../assets/images/solar-pv/solar6.jpg',
-        title: 'Solar PV'
-      },
-      {
-        src: '../assets/images/solar-pv/solar1.jpg',
-        title: 'Solar PV'
-      }
-    ],
-    gallery: {
-      enabled: true
-    },
-    type: 'image' // this is a default type
-  });
-
-  $('#open-popup6').magnificPopup({
-    items: [
-      {
-        src: '../assets/images/solar-pv/solarpv-diagram.png',
-        title: 'Solar PV'
-      },
-      {
-        src: '../assets/images/solar-pv/solar6.jpg',
-        title: 'Solar PV'
-      },
-      {
-        src: '../assets/images/solar-pv/solar1.jpg',
-        title: 'Solar PV'
-      }
-    ],
-    gallery: {
-      enabled: true
-    },
-    type: 'image' // this is a default type
   });
 });
-
-
 
 /* GoogleMaps API */
 
@@ -230,7 +109,7 @@ function initMap() {
   marker.addListener('click', toggleBounce);
 
   var infoWindow = new google.maps.InfoWindow({
-    content: '<img class="map" src="assets/images/newlogo3.png" style="height:4rem"/>'
+    content: '<img class="map" src="assets/images/logos/newlogo3.png" style="height:4rem"/>'
   });
 
   marker.addListener('click', function () {
@@ -257,16 +136,6 @@ function initMap() {
 
 
 
-/* EmailJS
-window.onload = function () {
-  document.getElementById('contact-form').addEventListener('submit', function (event) {
-    event.preventDefault();
-    // generate the contact number value
-    this.contact_number.value = Math.random() * 100000 | 0;
-    emailjs.sendForm('contact_service', 'contact_template', this);
-  });
-}
-*/
 
 
 

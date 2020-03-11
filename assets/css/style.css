@@ -84,6 +84,29 @@ body {
     transition: ease .5s;
 }
 
+@media (max-width: 450px) {
+    .icon-top a:nth-child(4) {
+        padding-right: 10px;
+    }
+    .icon-top a:nth-child(3) {
+        border: none;
+    }
+    .navbar {
+        text-align: center;
+    }
+    .navbar-toggler {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .top-icons {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .about-us-html:nth-child(1) {
+        display: none;
+    }
+}
+
 /*############################## Navbar ##############################*/
 
 nav {
@@ -122,6 +145,18 @@ nav {
 
 .dropdown-item:hover {
     background-color: rgba(83, 192, 125, 0.4);
+}
+
+.navbar .nav-item:not(:last-child) {
+    margin-right: 35px;
+}
+
+.dropdown-toggle::after {
+    transition: transform 0.15s linear;
+}
+
+.show.dropdown .dropdown-toggle::after {
+    transform: translateY(3px);
 }
 
 .navbar-logo img {
@@ -202,46 +237,8 @@ nav {
     font-weight: 500;
 }
 
-.about-us-btn {
-    backface-visibility: hidden;
-    position: relative;
-    cursor: pointer;
-    display: inline-block;
-    white-space: nowrap;
-    background: #53c07d;
-    padding: 8px 20px 8px 50px;
-    color: #fff;
-    font-size: 15px;
-    font-family: Helvetica Neue;
-    font-weight: 900;
-    font-style: normal;
-    transition: ease-in-out 1s;
-}
-
-.about-us-btn>i {
-    color: #53c07d;
-    font-size: 1em;
-    background: #fff;
-    border: 4px solid #53c07d;
-    border-width: 4px 4px 4px 4px;
-    padding: 11px 12px 11px 12px;
-    margin: 6px 6px 6px 6px;
-    position: absolute;
-    top: -10px;
-    left: -10px;
-    bottom: -10px;
-    transition: ease-in-out .5s;
-}
-
-.about-us-btn:hover {
-    background: #fff;
-    color: #53c07d;
-}
-
-.about-us-btn:hover i {
-    background: #53c07d;
-    color: #fff;
-    transform: rotate(90deg);
+.about-us p {
+    text-align: left;
 }
 
 /*############################## Products ##############################*/
@@ -480,6 +477,7 @@ nav {
     letter-spacing: 2px;
     font-weight: 500;
     transition: all ease-in-out .6s;
+    text-align: center;
 }
 
 @media screen and (max-width:768px) {
@@ -531,10 +529,10 @@ h5::before {
     padding: 10px 11px;
 }
 
-@media screen and (max-width:768px) {
-    .contact-three a i {
-        text-align: left;
-    }
+.contact-three span {
+    display: flex;
+    justify-content: center;
+    text-align: center;
 }
 
 .contact-three a:nth-child(1) i:hover {
@@ -559,6 +557,10 @@ h5::before {
 .contact-four a i {
     color: #53c07d;
     transition: ease 1s;
+}
+
+.contact-four a {
+    cursor: initial;
 }
 
 .contact-four a:hover i {
@@ -591,7 +593,7 @@ hr {
 
 @media screen and (min-width: 992px) {
     .aboutUsBg {
-        background: linear-gradient(to bottom, rgba(83, 192, 125, 0.4), rgba(83, 192, 125, 0.4)), url('../images/googlemaps/googlemaps3.png') center/cover fixed no-repeat;
+        background: linear-gradient(to bottom, rgba(83, 192, 125, 0.2), rgba(83, 192, 125, 0.2)), url('../images/wind-farm/windfarm6.jpg') center/cover fixed no-repeat;
     }
 }
 
@@ -684,19 +686,19 @@ hr {
         transform: translate(0px, 0px) rotate(0deg);
     }
     70% {
-        transform: translate(0px, 0px) rotate(0deg);
+        transform: translate(1px, 4px) rotate(0deg);
     }
     71% {
-        transform: translate(0px, 0px) rotate(0deg);
+        transform: translate(2px, 5px) rotate(0deg);
     }
     72% {
-        transform: translate(0px, 0px) rotate(0deg);
+        transform: translate(-2px, 3px) rotate(0deg);
     }
     73% {
-        transform: translate(0px, 0px) rotate(0deg);
+        transform: translate(-1px, 2px) rotate(0deg);
     }
     74% {
-        transform: translate(0px, 0px) rotate(0deg);
+        transform: translate(-5px, 2px) rotate(0deg);
     }
     75% {
         transform: translate(-1px, 2px) rotate(-1deg);
@@ -779,34 +781,57 @@ hr {
 }
 
 .about-us-html h3 {
-    font-weight: 200;
+    font-weight: 400;
     color: #f1fffa;
 }
 
 .about-us-html strong {
     color: #53c07d;
-    font-weight: 500;
+    font-weight: 800;
 }
 
 .about-us-html p {
     color: #f1fffa;
 }
 
+.about-us-html ul {
+    list-style: none;
+    color: #fff;
+}
+
+.about-us-html ul li::before {
+    content: "\2022";
+    /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: #53c07d;
+    /* Change the color */
+    font-weight: bold;
+    /* If you want it to be bold */
+    display: inline-block;
+    /* Needed to add space between the bullet and the text */
+    width: 1em;
+    /* Also needed for space (tweak if needed) */
+    margin-left: -1em;
+    /* Also needed for space (tweak if needed) */
+}
+
 @media screen and (max-width: 992px) {
     .about-us-html p {
-        font-size: .7rem;
+        font-size: .9rem;
+    }
+    .about-us-html ul li {
+        font-size: .9rem;
     }
 }
 
 .filler ul {
     list-style: none;
     font-size: 1.2rem;
-    font-weight: 300;
+    font-weight: 500;
 }
 
 .filler p {
     font-size: 1.2rem;
-    font-weight: 300;
+    font-weight: 500;
 }
 
 @media screen and (max-width: 992px) {
@@ -823,6 +848,10 @@ hr {
 
 .map {
     background: linear-gradient(to bottom, rgba(83, 192, 125, 0.4), rgba(83, 192, 125, 0.4)), center/cover fixed no-repeat;
+}
+
+div#map {
+    min-height: 360px;
 }
 
 /*############################## End About-us.html ##############################*/
@@ -869,50 +898,94 @@ hr {
     box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.2);
 }
 
-/*############################## End Products ##############################*/
-
-/*############### air-source.html ###############*/
-
-.airsource-parallax {
-    min-height: 40vh;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../images/air-source/air-source4.jpg') center/cover fixed no-repeat;
-}
-
-@media screen and (max-width: 992px) {
-    .airsource-parallax {
-        min-height: 40vh;
-        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../images/air-source/air-source4.jpg') center/cover no-repeat;
-    }
-}
-
 .pop-up {
-    padding: 10px;
     color: #fff;
     background: #707070;
     transition: all 1s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
     border-radius: 3px;
     letter-spacing: 2px;
     font-weight: 400;
-    transition: ease 1s;
+    padding: 5px;
     text-transform: uppercase;
+    border: none;
+    text-align: center;
 }
 
 .pop-up:hover {
-    color: #fff;
     background: rgba(83, 192, 125, 0.8);
     transform: translateY(-5px);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.9);
 }
 
-/*############### solar-pv.html ###############*/
+@media screen and (max-width: 992px) {
+    .product-header-div {
+        display: none;
+    }
+    .product-container {
+        padding-bottom: 20px;
+    }
+    .product-img {
+        clip-path: none;
+    }
+    .product-container h1 {
+        text-align: center;
+        border-bottom: none;
+        padding-top: 10px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .product-header-div {
+        padding: 0 !important;
+    }
+    .product-container {
+        padding: 0 !important;
+    }
+}
+
+/*############################## End Products ##############################*/
+
+/*############################## solar-pv.html ##############################*/
 
 .solarpv-parallax {
     min-height: 40vh;
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../images/solar-pv/solar1.jpg') center/cover fixed no-repeat;
 }
 
-div#map {
-    min-height: 360px;
+/*############################## air-source.html ##############################*/
+
+.airsource-parallax {
+    min-height: 40vh;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../images/air-source/air-source6.jpg') center/cover fixed no-repeat;
+}
+
+/*############################## battery-storage.html ##############################*/
+
+.battery-storage-parallax {
+    min-height: 40vh;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../images/battery-storage/battery-storage1.jpg') center/cover fixed no-repeat;
+}
+
+/*############################## inverter.html ##############################*/
+
+.inverter-parallax {
+    min-height: 40vh;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../images/inverter-systems/solaredge2.jpg') center/cover fixed no-repeat;
+}
+
+/*############################## air-to-air.html ##############################*/
+
+.air-parallax {
+    min-height: 40vh;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../images/air-to-air/air-conditioner3.jpg') center/cover fixed no-repeat;
+}
+
+/*############################## gas-boilers.html ##############################*/
+
+.boiler-parallax {
+    min-height: 45vh;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../images/gas-boilers/boiler2.jpg') center/cover fixed no-repeat;
 }
 
 /*############### privacy.html ###############*/
@@ -932,52 +1005,6 @@ div#map {
 .website-name {
     color: #53c07d;
     font-weight: 900;
-}
-
-@media (max-width: 450px) {
-    .details {
-        display: none;
-    }
-    .icon-hover {
-        color: #214c32;
-        transition: ease .5s;
-        display: none;
-    }
-    .icon-hover2 {
-        display: none;
-    }
-    .icon-hover3 {
-        color: #f1fffa;
-        transition: ease .5s;
-        font-size: 1.4rem;
-        display: unset;
-    }
-    .icon-hover3:hover {
-        color: #214c32;
-    }
-    .icon-top a:nth-child(4) {
-        padding-right: 10px;
-    }
-    .icon-top a:nth-child(3) {
-        border: none;
-    }
-    .navbar {
-        text-align: center;
-    }
-    .navbar-toggler {
-        margin-left: auto;
-        margin-right: auto;
-    }
-    .top-icons {
-        margin-left: auto;
-        margin-right: auto;
-    }
-    .title-underline {
-        width: 50%;
-    }
-    .about-us-html:nth-child(1) {
-        display: none;
-    }
 }
 
 /*
