@@ -1,7 +1,18 @@
 $(document).ready(function () {
+
+  $('.pop-up').magnificPopup({
+    delegate: 'a', // child items selector, by clicking on it popup will open
+    type: 'image',
+    gallery: {
+      enabled: true
+    }
+    // other options
+  });
+
+
   /* Magnific Image gallery */
   // Solar PV
-  $('#open-popup1').magnificPopup({
+  $('#open-popup1').magnificPopup.open({
     items: [
       {
         src: '../assets/images/solar-pv/solarpv-diagram.png',
@@ -20,8 +31,7 @@ $(document).ready(function () {
       enabled: true
     },
     type: 'image', // this is a default type
-    fixedBgPos: true,
-    fixedContentPos: true
+
   });
   // Air-Source Heat Pump
   $('#open-popup2').magnificPopup({

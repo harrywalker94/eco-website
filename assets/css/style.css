@@ -899,7 +899,6 @@ div#map {
 }
 
 .pop-up {
-    color: #fff;
     background: #707070;
     transition: all 1s ease;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
@@ -910,6 +909,11 @@ div#map {
     text-transform: uppercase;
     border: none;
     text-align: center;
+}
+
+.pop-up a {
+    color: #fff;
+    text-decoration: none;
 }
 
 .pop-up:hover {
