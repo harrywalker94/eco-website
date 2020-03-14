@@ -19,7 +19,9 @@ $(document).ready(function () {
     gallery: {
       enabled: true
     },
-    type: 'image' // this is a default type
+    type: 'image', // this is a default type
+    fixedBgPos: true,
+    fixedContentPos: true
   });
   // Air-Source Heat Pump
   $('#open-popup2').magnificPopup({
