@@ -44,9 +44,9 @@ I had to seperate each plugin into their own files and attach them seperately to
 # Deployment
 The website is hosted using GitHub pages, deployed from the master branch. The deployed site will update automatically upon new commits to the master branch. In order for the site to deploy correctly on GitHub pages, the landing page must be named index.html.
 
-You can run this deployed site at: https://harrywalker94.github.io/plumbing-website/
+You can run this deployed site at: https://harrywalker94.github.io/eco-website/
 
-To run  this site locally, you can clone this repository directly into the editor of your choice by pasting __git clone https://harrywalker94.github.io/plumbing-website/ into your terminal. To cut ties with this GitHub repository, type __git remote rm origin__ into the terminal.
+To run  this site locally, you can clone this repository directly into the editor of your choice by pasting __git clone https://harrywalker94.github.io/eco-website/ into your terminal. To cut ties with this GitHub repository, type __git remote rm origin__ into the terminal.
 
 #  Credits
 
