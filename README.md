@@ -4,7 +4,7 @@ A website for an online Eco company who sell renewable and sustanable energy pro
 
 # UX
 
-The main aim of my website was to provide the user with images, videos, content and User Interaction. I chose a green and grey theme to symoblise the Environment.
+The main aim of my website was to provide the user with images, videos, content and User Interaction. I chose a green and grey theme to symbolise the Environment.
 
 I wanted to make the website easy for the user to navigate, hence why I have created a user friendly responsive-design and included links to other pages on the site as well as buttons to navigate the page from top to bottom, without having to scroll.
 
