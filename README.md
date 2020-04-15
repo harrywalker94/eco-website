@@ -1,6 +1,6 @@
 # ECO Advanced - Company Website
 
-A website for an online Eco company who sell renewable and sustanable energy products.
+A website for an online Eco company who sell renewable and sustainable energy products.
 
 # UX
 
