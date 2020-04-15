@@ -11,7 +11,7 @@ I wanted to make the website easy for the user to navigate, hence why I have cre
 # Technologies
 1. HTML
 2. CSS
-3. Boostrap
+3. Bootstrap
 4. jQuery
 5. JavaScript
 6. GoogleMaps API
